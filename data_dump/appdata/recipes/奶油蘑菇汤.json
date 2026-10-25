@@ -1,0 +1,248 @@
+{
+  "dish": "奶油蘑菇汤",
+  "cuisine": "西餐",
+  "category": "western",
+  "difficulty": 1,
+  "cook_time": 20,
+  "servings": "2-3人份",
+  "calories": "约280大卡\/份",
+  "ingredients": {
+    "mushroom": {
+      "name": "蘑菇",
+      "icon": "🍄",
+      "amount": "200g口蘑或香菇",
+      "options": {
+        "type": {
+          "label": "蘑菇选择",
+          "options": [
+            {
+              "id": "nmt_1",
+              "name": "口蘑200g",
+              "desc": "经典选择，香味适中",
+              "score": 10,
+              "detail": "口蘑是最经典的选择，香味适中，口感嫩滑。200g约10-12个。选颜色白、表面光滑的。"
+            },
+            {
+              "id": "nmt_2",
+              "name": "香菇200g",
+              "desc": "香味更浓",
+              "score": 8,
+              "detail": "香菇香味更浓，但口感偏韧。200g约8-10个。干香菇泡发后香味更浓。"
+            },
+            {
+              "id": "nmt_3",
+              "name": "混合蘑菇200g",
+              "desc": "口感更丰富",
+              "score": 9,
+              "detail": "口蘑+香菇+杏鲍菇各约70g。混合蘑菇口感和香味更丰富。超市有卖混合蘑菇包。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理蘑菇",
+      "description": "蘑菇要切片，约3分钟",
+      "options": [
+        {
+          "id": "nmt_p1",
+          "name": "蘑菇切5mm薄片",
+          "desc": "经典切法",
+          "tip": "200g蘑菇切5mm薄片，约30-40片。切好后不要洗，用厨房纸擦干净即可。洗了会吸水影响口感。",
+          "params": {
+            "method": "切片",
+            "thickness": "5mm"
+          }
+        }
+      ]
+    },
+    "cook": {
+      "name": "炒蘑菇",
+      "description": "黄油炒蘑菇更香，约5分钟",
+      "options": [
+        {
+          "id": "nmt_c1",
+          "name": "黄油20g炒蘑菇至出香味(5分钟)",
+          "desc": "经典做法",
+          "tip": "黄油20g融化后下蘑菇片，中火（约160度）炒5分钟至出香味。蘑菇会先出水再收干，这是正常的。",
+          "params": {
+            "method": "黄油炒",
+            "time": "5分钟",
+            "temp": "160度",
+            "ingredients": [
+              "黄油20g"
+            ]
+          }
+        },
+        {
+          "id": "nmt_c2",
+          "name": "橄榄油1汤匙炒蘑菇(4分钟)",
+          "desc": "更健康",
+          "tip": "橄榄油1汤匙（15ml）炒蘑菇4分钟。比黄油健康，但香味稍差。",
+          "params": {
+            "method": "橄榄油炒",
+            "time": "4分钟",
+            "ingredients": [
+              "橄榄油1汤匙(15ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "soup": {
+      "name": "煮汤",
+      "description": "加牛奶煮汤，约10分钟",
+      "options": [
+        {
+          "id": "nmt_s1",
+          "name": "加牛奶500ml小火煮10分钟",
+          "desc": "经典做法",
+          "tip": "牛奶500ml小火煮10分钟。牛奶不要煮沸，否则会分离。保持微沸（约80度）即可。",
+          "params": {
+            "method": "牛奶煮",
+            "time": "10分钟",
+            "temp": "80度",
+            "ingredients": [
+              "牛奶500ml"
+            ]
+          }
+        },
+        {
+          "id": "nmt_s2",
+          "name": "加淡奶油200ml+牛奶300ml煮8分钟",
+          "desc": "更浓郁",
+          "tip": "淡奶油200ml+牛奶300ml。比纯牛奶更浓郁顺滑。但热量更高。",
+          "params": {
+            "method": "奶油煮",
+            "time": "8分钟",
+            "ingredients": [
+              "淡奶油200ml",
+              "牛奶300ml"
+            ]
+          }
+        }
+      ]
+    },
+    "thicken": {
+      "name": "勾芡",
+      "description": "让汤更浓稠",
+      "options": [
+        {
+          "id": "nmt_t1",
+          "name": "面粉15g+黄油10g炒面糊+牛奶调入",
+          "desc": "经典做法",
+          "tip": "面粉15g+黄油10g小火炒2分钟成面糊（Roux），再慢慢加入牛奶搅匀。这是西餐浓汤的经典做法。",
+          "params": {
+            "method": "面糊勾芡",
+            "ingredients": [
+              "面粉15g",
+              "黄油10g"
+            ]
+          }
+        },
+        {
+          "id": "nmt_t2",
+          "name": "不勾芡",
+          "desc": "清爽版",
+          "tip": "不勾芡的汤更清爽，像清汤。喜欢浓稠口感的建议勾芡。",
+          "params": {
+            "method": "不勾芡"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "盐和胡椒调味",
+      "options": [
+        {
+          "id": "nmt_st1",
+          "name": "盐1\/2茶匙+白胡椒1\/4茶匙+肉豆蔻少许",
+          "desc": "经典调味",
+          "tip": "盐1\/2茶匙+白胡椒1\/4茶匙+肉豆蔻少许（用擦丝器擦一点点）。肉豆蔻是西餐汤的秘密武器，不要多放。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "白胡椒1\/4茶匙",
+              "肉豆蔻少许"
+            ]
+          }
+        },
+        {
+          "id": "nmt_st2",
+          "name": "只用盐1\/2茶匙和黑胡椒1\/4茶匙",
+          "desc": "简单调味",
+          "tip": "黑胡椒现磨更香。盐要少量多次加。",
+          "params": {
+            "style": "简单",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "黑胡椒1\/4茶匙(现磨)"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "装碗撒配料",
+      "options": [
+        {
+          "id": "nmt_f1",
+          "name": "撒面包丁20g+欧芹碎5g",
+          "desc": "经典装盘",
+          "tip": "面包丁20g（切1cm方块，黄油煎至金黄）+欧芹碎5g。面包丁要提前烤脆。",
+          "params": {
+            "method": "撒面包丁",
+            "ingredients": [
+              "面包丁20g",
+              "欧芹碎5g"
+            ]
+          }
+        },
+        {
+          "id": "nmt_f2",
+          "name": "直接喝",
+          "desc": "简单版",
+          "tip": "原味也很好喝。趁热喝口感最好。",
+          "params": {
+            "method": "直接喝"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 15,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "mushroom": {
+        "type": "nmt_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "nmt_p1",
+      "cook": "nmt_c1",
+      "soup": "nmt_s1",
+      "thicken": "nmt_t1",
+      "seasoning": "nmt_st1",
+      "finish": "nmt_f1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的奶油蘑菇汤！浓郁顺滑，蘑菇鲜香。口蘑200g切片，黄油20g炒5分钟，牛奶500ml小火煮10分钟，面粉黄油面糊勾芡。",
+      "good": "不错！汤煮得很浓稠。蘑菇炒出了香味。",
+      "average": "还可以，牛奶不要煮沸，否则会分离。",
+      "poose": "多练几次，黄油炒蘑菇是关键。中火炒5分钟至出香味。"
+    }
+  }
+}

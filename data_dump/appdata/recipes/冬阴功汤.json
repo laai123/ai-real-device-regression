@@ -1,0 +1,229 @@
+{
+  "dish": "冬阴功汤",
+  "cuisine": "东南亚",
+  "category": "asian",
+  "difficulty": 2,
+  "cook_time": 20,
+  "servings": "2-3人份",
+  "calories": "约180大卡\/份",
+  "ingredients": {
+    "shrimp": {
+      "name": "大虾",
+      "icon": "🦐",
+      "amount": "10只大虾（约200g）",
+      "options": {
+        "count": {
+          "label": "数量",
+          "options": [
+            {
+              "id": "dyg_1",
+              "name": "10只",
+              "desc": "约200g，2-3人份",
+              "score": 10,
+              "detail": "10只大虾约200g，够2-3人份。选新鲜的、壳硬的虾，颜色鲜亮。"
+            },
+            {
+              "id": "dyg_2",
+              "name": "5只",
+              "desc": "约100g，1-2人份",
+              "score": 7,
+              "detail": "5只虾够1-2人份。虾少汤更酸辣。"
+            }
+          ]
+        }
+      }
+    },
+    "mushroom": {
+      "name": "蘑菇",
+      "icon": "🍄",
+      "amount": "100g草菇或口蘑",
+      "options": {
+        "type": {
+          "label": "蘑菇选择",
+          "options": [
+            {
+              "id": "dyg_m1",
+              "name": "草菇",
+              "desc": "100g，经典搭配",
+              "score": 10,
+              "detail": "草菇是冬阴功的经典搭配，口感嫩滑。选新鲜的草菇，约100g。"
+            },
+            {
+              "id": "dyg_m2",
+              "name": "口蘑",
+              "desc": "100g，更容易买到",
+              "score": 8,
+              "detail": "口蘑比草菇更容易买到。切片后加入汤中。"
+            },
+            {
+              "id": "dyg_m3",
+              "name": "香菇",
+              "desc": "100g，香味更浓",
+              "score": 7,
+              "detail": "香菇香味更浓，但口感和草菇不同。切片后加入。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "cook_base": {
+      "name": "炒底料",
+      "description": "冬阴功酱是灵魂，约2分钟",
+      "options": [
+        {
+          "id": "dyg_b1",
+          "name": "冬阴功酱2勺+椰浆100ml炒香",
+          "desc": "经典做法",
+          "tip": "冬阴功酱2勺（30g）+椰浆100ml小火炒2分钟至出香味。冬阴功酱超市有卖现成的。椰浆最后再加，防止煮沸。",
+          "params": {
+            "method": "炒底料",
+            "time": "2分钟",
+            "temp": "120度",
+            "ingredients": [
+              "冬阴功酱2勺(30g)",
+              "椰浆100ml"
+            ]
+          }
+        },
+        {
+          "id": "dyg_b2",
+          "name": "冬阴功酱2勺直接加水",
+          "desc": "省事",
+          "tip": "冬阴功酱2勺（30g）+水800ml直接煮开。味道差一些但更简单。",
+          "params": {
+            "method": "直接煮",
+            "ingredients": [
+              "冬阴功酱2勺(30g)",
+              "水800ml"
+            ]
+          }
+        }
+      ]
+    },
+    "cook": {
+      "name": "煮汤",
+      "description": "加水煮开后放虾和蘑菇，约5分钟",
+      "options": [
+        {
+          "id": "dyg_c1",
+          "name": "加水800ml煮开，放虾和蘑菇煮5分钟",
+          "desc": "经典做法",
+          "tip": "水800ml煮开后放入蘑菇煮3分钟，再放虾煮2分钟。虾变色即可，不要煮太久。虾煮太久会变硬。",
+          "params": {
+            "method": "煮汤",
+            "time": "5分钟",
+            "water": "800ml"
+          }
+        },
+        {
+          "id": "dyg_c2",
+          "name": "加高汤800ml更鲜",
+          "desc": "更鲜美",
+          "tip": "用鸡汤或骨汤代替清水，味道更鲜美。没有高汤用清水也可以。",
+          "params": {
+            "method": "高汤煮",
+            "time": "5分钟",
+            "water": "高汤800ml"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "酸辣鲜香是灵魂",
+      "options": [
+        {
+          "id": "dyg_s1",
+          "name": "青柠汁2勺+鱼露1勺+椰浆50ml",
+          "desc": "经典调味",
+          "tip": "青柠汁2勺（30ml）+鱼露1勺（15ml）+椰浆50ml。青柠汁最后再加，煮久了会苦。鱼露很咸，少放。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "青柠汁2勺(30ml)",
+              "鱼露1勺(15ml)",
+              "椰浆50ml"
+            ]
+          }
+        },
+        {
+          "id": "dyg_s2",
+          "name": "柠檬汁2勺+盐1\/2茶匙",
+          "desc": "没有鱼露的替代",
+          "tip": "柠檬汁2勺（30ml）+盐1\/2茶匙。没有鱼露可以用盐代替，但鲜味会差一些。",
+          "params": {
+            "style": "替代",
+            "ingredients": [
+              "柠檬汁2勺(30ml)",
+              "盐1\/2茶匙"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅装碗",
+      "options": [
+        {
+          "id": "dyg_f1",
+          "name": "撒香菜5g+小米辣2个",
+          "desc": "经典装盘",
+          "tip": "香菜5g切碎+小米辣2个切圈撒在汤面上。香菜增加香味，小米辣增加颜色和辣度。",
+          "params": {
+            "method": "撒香菜辣椒",
+            "ingredients": [
+              "香菜5g",
+              "小米辣2个"
+            ]
+          }
+        },
+        {
+          "id": "dyg_f2",
+          "name": "挤青柠汁出锅",
+          "desc": "更酸更开胃",
+          "tip": "出锅前挤半个青柠汁（约15ml），酸味更清新。",
+          "params": {
+            "method": "挤青柠",
+            "ingredients": [
+              "青柠半个"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 20,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "shrimp": {
+        "count": "dyg_1"
+      },
+      "mushroom": {
+        "type": "dyg_m1"
+      }
+    },
+    "cooking_flow": {
+      "cook_base": "dyg_b1",
+      "cook": "dyg_c1",
+      "seasoning": "dyg_s1",
+      "finish": "dyg_f1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的冬阴功汤！酸辣鲜香，椰奶浓郁。冬阴功酱2勺+椰浆100ml炒香，水800ml煮开，虾变色即可。青柠汁最后再加。",
+      "good": "不错！酸辣比例掌握得很好。虾很新鲜。",
+      "average": "还可以，青柠汁最后再加，煮久了会苦。",
+      "poose": "多练几次，冬阴功酱是灵魂。超市有卖现成的。"
+    }
+  }
+}

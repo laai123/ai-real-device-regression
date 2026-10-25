@@ -1,0 +1,172 @@
+{
+  "dish": "佛跳墙",
+  "cuisine": "闽菜",
+  "category": "other",
+  "difficulty": 3,
+  "cook_time": 180,
+  "servings": "4-6人份",
+  "calories": "约600大卡\/份",
+  "ingredients": {
+    "seafood": {
+      "name": "海鲜",
+      "icon": "🦞",
+      "amount": "鲍鱼4个+海参2条+干贝20g+蹄筋100g",
+      "options": {
+        "type": {
+          "label": "海鲜搭配",
+          "options": [
+            {
+              "id": "ftq_1",
+              "name": "鲍鱼4个+海参2条+干贝20g+蹄筋100g",
+              "desc": "豪华版",
+              "score": 10,
+              "detail": "鲍鱼4个（约200g）+海参2条（约100g）+干贝20g+蹄筋100g。干货要提前泡发24小时。"
+            },
+            {
+              "id": "ftq_2",
+              "name": "鲍鱼2个+干贝20g+虾仁50g",
+              "desc": "家常版",
+              "score": 8,
+              "detail": "鲍鱼2个+干贝20g+虾仁50g。少了海参和蹄筋，但更经济实惠。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "泡发食材",
+      "description": "干货要提前泡发24小时",
+      "options": [
+        {
+          "id": "ftq_p1",
+          "name": "所有干货提前泡发24小时",
+          "desc": "标准做法",
+          "tip": "海参用清水泡发24小时（中途换水2次）。干贝用温水泡2小时。蹄筋用冷水泡12小时。鲍鱼用盐水泡1小时。泡发要提前一天准备。",
+          "params": {
+            "method": "提前泡发",
+            "time": "24小时"
+          }
+        }
+      ]
+    },
+    "cook_base": {
+      "name": "熬高汤",
+      "description": "高汤是佛跳墙的灵魂",
+      "options": [
+        {
+          "id": "ftq_b1",
+          "name": "老母鸡1只+猪骨500g熬4小时",
+          "desc": "经典高汤",
+          "tip": "老母鸡1只（约1.5kg）+猪骨500g+姜3片+葱2根。冷水下锅，大火烧开撇去浮沫，转小火熬4小时。高汤要小火慢熬，不要大火。",
+          "params": {
+            "method": "熬高汤",
+            "time": "4小时",
+            "ingredients": [
+              "老母鸡1只(1.5kg)",
+              "猪骨500g",
+              "姜3片",
+              "葱2根"
+            ]
+          }
+        },
+        {
+          "id": "ftq_b2",
+          "name": "用浓汤宝2个+水2升代替",
+          "desc": "省事",
+          "tip": "浓汤宝2个+水2升。味道差一些但省了4小时。",
+          "params": {
+            "method": "浓汤宝",
+            "ingredients": [
+              "浓汤宝2个",
+              "水2升"
+            ]
+          }
+        }
+      ]
+    },
+    "stew": {
+      "name": "炖煮",
+      "description": "小火慢炖让味道融合",
+      "options": [
+        {
+          "id": "ftq_sw1",
+          "name": "所有食材放入炖盅，小火炖2小时",
+          "desc": "经典做法",
+          "tip": "高汤+所有泡发好的食材放入炖盅。用保鲜膜封口（防止水汽进入），小火炖2小时。佛跳墙讲究的是汤鲜味美，食材软烂。",
+          "params": {
+            "method": "炖盅慢炖",
+            "time": "2小时"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "ftq_s1",
+          "name": "盐1茶匙+料酒1勺",
+          "desc": "保持原味",
+          "tip": "佛跳墙讲究的是食材本味。盐1茶匙（5g）+料酒1勺（15ml）即可。不要加太多调料，会掩盖食材的鲜味。",
+          "params": {
+            "style": "原味",
+            "ingredients": [
+              "盐1茶匙(5g)",
+              "料酒1勺(15ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅装碗",
+      "options": [
+        {
+          "id": "ftq_f1",
+          "name": "装入炖盅，浇汤汁，撒枸杞5g",
+          "desc": "经典装盘",
+          "tip": "装入炖盅后浇上高汤。撒枸杞5g点缀。佛跳墙要趁热喝，汤鲜味美。",
+          "params": {
+            "method": "装碗浇汁",
+            "ingredients": [
+              "枸杞5g"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 20,
+    "seasoning": 25,
+    "step_order": 25,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "seafood": {
+        "type": "ftq_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "ftq_p1",
+      "cook_base": "ftq_b1",
+      "stew": "ftq_sw1",
+      "seasoning": "ftq_s1",
+      "finish": "ftq_f1"
+    },
+    "optimal_time": 180,
+    "tips": {
+      "perfect": "完美的佛跳墙！汤鲜味美，食材软烂。干货提前泡发24小时，老母鸡+猪骨熬高汤4小时，所有食材炖盅慢炖2小时。",
+      "good": "不错！高汤熬得很浓。食材软烂入味。",
+      "average": "还可以，泡发时间要够。干货至少泡12小时。",
+      "poose": "多练几次，高汤是灵魂。老母鸡+猪骨小火熬4小时。"
+    }
+  }
+}

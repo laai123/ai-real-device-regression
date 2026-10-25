@@ -1,0 +1,141 @@
+{
+  "dish": "湘西外婆菜",
+  "cuisine": "湘菜",
+  "category": "chinese",
+  "difficulty": 1,
+  "cook_time": 10,
+  "servings": "2人份",
+  "calories": "约150大卡\/份",
+  "ingredients": {
+    "pickled": {
+      "name": "外婆菜",
+      "icon": "🥬",
+      "amount": "1包外婆菜（约200g）",
+      "options": {
+        "type": {
+          "label": "类型",
+          "options": [
+            {
+              "id": "wpc_1",
+              "name": "买现成的外婆菜",
+              "desc": "200g，方便快捷",
+              "score": 10,
+              "detail": "超市有卖袋装的外婆菜，约200g。选湖南产的，味道更正宗。开袋即用。"
+            },
+            {
+              "id": "wpc_2",
+              "name": "自制腌菜",
+              "desc": "更正宗，但需要提前腌制",
+              "score": 8,
+              "detail": "用芥菜或萝卜缨腌制，需要提前3-5天。更正宗但费时间。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "fry": {
+      "name": "炒外婆菜",
+      "description": "大火快炒出香味，约3分钟",
+      "options": [
+        {
+          "id": "wp_f1",
+          "name": "热油爆香蒜末10g后下外婆菜200g炒3分钟",
+          "desc": "经典做法",
+          "tip": "锅里放1汤匙油（15ml），中火（约160度）爆香蒜末10g（30秒），加入外婆菜200g翻炒3分钟。外婆菜本身很咸，不需要再加盐。",
+          "params": {
+            "method": "蒜末爆香",
+            "time": "3分钟",
+            "temp": "160度",
+            "ingredients": [
+              "蒜末10g",
+              "外婆菜200g"
+            ]
+          }
+        },
+        {
+          "id": "wp_f2",
+          "name": "直接下锅炒(3分钟)",
+          "desc": "省事",
+          "tip": "锅里放1汤匙油（15ml），直接炒外婆菜3分钟。也可以不加油直接干炒。",
+          "params": {
+            "method": "直接炒",
+            "time": "3分钟"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "wp_s1",
+          "name": "加少许糖1\/4茶匙和干辣椒3个",
+          "desc": "提鲜增色",
+          "tip": "糖1\/4茶匙可以中和酸味。干辣椒3个剪段增加辣味和颜色。",
+          "params": {
+            "style": "提鲜",
+            "ingredients": [
+              "糖1\/4茶匙",
+              "干辣椒3个"
+            ]
+          }
+        },
+        {
+          "id": "wp_s2",
+          "name": "不加调料",
+          "desc": "原味",
+          "tip": "外婆菜本身已经很咸了，不需要再加调料。原味最能品尝腌菜的风味。",
+          "params": {
+            "style": "原味"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "翻炒均匀出锅",
+      "options": [
+        {
+          "id": "wp_f1",
+          "name": "翻炒均匀出锅(30秒)",
+          "desc": "经典做法",
+          "tip": "不要炒太久，外婆菜要保持脆嫩。翻炒30秒至调料均匀即可出锅。配米饭绝了。",
+          "params": {
+            "method": "翻炒出锅",
+            "time": "30秒"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 20,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 20,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "pickled": {
+        "type": "wpc_1"
+      }
+    },
+    "cooking_flow": {
+      "fry": "wp_f1",
+      "seasoning": "wp_s1",
+      "finish": "wp_f1"
+    },
+    "optimal_time": 10,
+    "tips": {
+      "perfect": "完美的外婆菜！咸香下饭，脆嫩可口。外婆菜200g+蒜末10g爆香，中火炒3分钟。加少许糖中和酸味。",
+      "good": "不错！炒得很香。外婆菜保持了脆嫩。",
+      "average": "还可以，不要炒太久。外婆菜本身已经调味了。",
+      "poose": "多练几次，火候是关键。中火炒3分钟即可。"
+    }
+  }
+}

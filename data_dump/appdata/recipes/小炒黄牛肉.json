@@ -1,0 +1,235 @@
+{
+  "dish": "小炒黄牛肉",
+  "cuisine": "湘菜",
+  "category": "chinese",
+  "difficulty": 2,
+  "cook_time": 15,
+  "servings": "2-3人份",
+  "calories": "约380大卡\/份",
+  "ingredients": {
+    "beef": {
+      "name": "黄牛肉",
+      "icon": "🥩",
+      "amount": "300g黄牛肉（里脊或腿肉）",
+      "options": {
+        "cut": {
+          "label": "切法",
+          "options": [
+            {
+              "id": "xc_1",
+              "name": "切薄片(2mm)",
+              "desc": "300g约30片，嫩滑口感",
+              "score": 10,
+              "detail": "2mm薄片是小炒黄牛肉的经典。逆纹切更嫩。切好后用蛋清+淀粉上浆，口感更滑嫩。"
+            },
+            {
+              "id": "xc_2",
+              "name": "切丝(3mm宽)",
+              "desc": "300g约150根，快速入味",
+              "score": 7,
+              "detail": "3mm宽的牛肉丝受热快，更容易入味。但炒的时候容易散。"
+            }
+          ]
+        }
+      }
+    },
+    "vegetable": {
+      "name": "配菜",
+      "icon": "🌶️",
+      "amount": "青椒3个(150g)+小米辣5个(20g)+蒜苗2根(60g)",
+      "options": {
+        "type": {
+          "label": "配菜选择",
+          "options": [
+            {
+              "id": "xcv_1",
+              "name": "青椒150g+小米辣20g+蒜苗60g",
+              "desc": "经典搭配，香辣够味",
+              "score": 10,
+              "detail": "青椒3个切块150g+小米辣5个切段20g+蒜苗2根切段60g。三种辣椒搭配，辣度层次丰富。"
+            },
+            {
+              "id": "xcv_2",
+              "name": "青椒150g+红椒50g",
+              "desc": "颜色更好",
+              "score": 8,
+              "detail": "青椒150g+红椒50g。红椒增加颜色，但辣度比青椒高。"
+            },
+            {
+              "id": "xcv_3",
+              "name": "只用青椒200g",
+              "desc": "简单版",
+              "score": 7,
+              "detail": "只用青椒200g。简单方便，但缺少辣味层次。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "marinate": {
+      "name": "腌制牛肉",
+      "description": "腌制让牛肉更嫩，约15分钟",
+      "options": [
+        {
+          "id": "xc_m1",
+          "name": "生抽1勺+淀粉1勺+油1茶匙腌15分钟",
+          "desc": "经典腌制",
+          "tip": "生抽1勺（15ml）+淀粉1勺（10g）+油1茶匙（5ml）抓匀腌15分钟。油可以防止粘连。",
+          "params": {
+            "method": "经典腌制",
+            "time": "15分钟",
+            "ingredients": [
+              "生抽1勺(15ml)",
+              "淀粉1勺(10g)",
+              "油1茶匙(5ml)"
+            ]
+          }
+        },
+        {
+          "id": "xc_m2",
+          "name": "不腌制直接炒",
+          "desc": "省时间",
+          "tip": "不腌制牛肉容易变老，口感差。建议至少用生抽和淀粉简单腌5分钟。",
+          "params": {
+            "method": "不腌",
+            "time": "0"
+          }
+        }
+      ]
+    },
+    "fry": {
+      "name": "炒牛肉",
+      "description": "大火快炒保持嫩滑，约1分钟",
+      "options": [
+        {
+          "id": "xc_f1",
+          "name": "大火滑炒至变色盛出(1分钟)",
+          "desc": "嫩滑口感",
+          "tip": "大火（约220度）滑炒1分钟，牛肉变色即可盛出。不要炒太久，否则变老。盛出后沥油备用。",
+          "params": {
+            "method": "滑炒",
+            "time": "1分钟",
+            "temp": "220度"
+          }
+        },
+        {
+          "id": "xc_f2",
+          "name": "中火煸炒至微焦(2分钟)",
+          "desc": "焦香口感",
+          "tip": "中火（约160度）煸2分钟至边缘微焦。煸炒时牛肉要铺开，不要堆在一起。",
+          "params": {
+            "method": "煸炒",
+            "time": "2分钟",
+            "temp": "160度"
+          }
+        }
+      ]
+    },
+    "stir_fry": {
+      "name": "炒配料",
+      "description": "辣椒和配料要保持脆嫩",
+      "options": [
+        {
+          "id": "xc_s1",
+          "name": "大火快炒辣椒和配料(1分钟)",
+          "desc": "保持脆嫩",
+          "tip": "大火快炒1分钟，辣椒刚好断生。青椒要后放（30秒），先放小米辣和蒜苗。",
+          "params": {
+            "method": "快炒",
+            "time": "1分钟",
+            "temp": "200度"
+          }
+        },
+        {
+          "id": "xc_s2",
+          "name": "先炒辣椒盛出，最后回锅",
+          "desc": "更入味",
+          "tip": "辣椒先炒1分钟盛出，牛肉回锅后再加入辣椒翻炒30秒。这样辣椒更入味。",
+          "params": {
+            "method": "先炒后盛",
+            "time": "1.5分钟"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "xc_t1",
+          "name": "生抽1.5勺+蚝油1\/2勺+盐1\/4茶匙",
+          "desc": "经典调味",
+          "tip": "生抽1.5勺（22ml）+蚝油半勺（7g）+盐1\/4茶匙。蚝油提鲜，不要放太多。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "生抽1.5勺(22ml)",
+              "蚝油半勺(7g)",
+              "盐1\/4茶匙"
+            ]
+          }
+        },
+        {
+          "id": "xc_t2",
+          "name": "只用生抽1勺",
+          "desc": "最简单",
+          "tip": "生抽1勺（15ml）即可。生抽本身已经有咸味和鲜味。",
+          "params": {
+            "style": "简单",
+            "ingredients": [
+              "生抽1勺(15ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "牛肉回锅翻炒出锅",
+      "options": [
+        {
+          "id": "xc_f1",
+          "name": "牛肉回锅翻炒均匀出锅(30秒)",
+          "desc": "经典做法",
+          "tip": "牛肉回锅后不要炒太久（30秒），否则变老。翻炒均匀即可出锅。",
+          "params": {
+            "method": "回锅出锅",
+            "time": "30秒"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 30,
+    "seasoning": 20,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "beef": {
+        "cut": "xc_1"
+      }
+    },
+    "cooking_flow": {
+      "marinate": "xc_m1",
+      "fry": "xc_f1",
+      "stir_fry": "xc_s1",
+      "seasoning": "xc_t1",
+      "finish": "xc_f1"
+    },
+    "optimal_time": 15,
+    "tips": {
+      "perfect": "完美的小炒黄牛肉！嫩滑多汁，锅气十足。黄牛肉300g切2mm薄片上浆15分钟，大火滑炒1分钟至变色盛出。",
+      "good": "不错！牛肉炒得很嫩。大火快炒是关键。",
+      "average": "还可以，牛肉要上浆腌制才嫩。",
+      "poose": "多练几次，火候是关键。大火快炒不超过1分钟。"
+    }
+  }
+}

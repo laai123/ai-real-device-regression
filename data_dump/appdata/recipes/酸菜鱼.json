@@ -1,0 +1,257 @@
+{
+  "dish": "酸菜鱼",
+  "cuisine": "川菜",
+  "category": "chinese",
+  "difficulty": 3,
+  "cook_time": 25,
+  "servings": "3-4人份",
+  "calories": "约320大卡\/份",
+  "ingredients": {
+    "fish": {
+      "name": "黑鱼",
+      "icon": "🐟",
+      "amount": "1条黑鱼（约600g）",
+      "options": {
+        "type": {
+          "label": "鱼种选择",
+          "options": [
+            {
+              "id": "scy_1",
+              "name": "黑鱼",
+              "desc": "600g，刺少肉嫩，最佳选择",
+              "score": 10,
+              "detail": "黑鱼是酸菜鱼的最佳选择，刺少肉嫩，片鱼片更容易。选眼睛明亮、活力好的新鲜黑鱼。600g约可片40片鱼片。"
+            },
+            {
+              "id": "scy_2",
+              "name": "草鱼",
+              "desc": "800g，经济实惠",
+              "score": 7,
+              "detail": "草鱼便宜量大，但刺多。片鱼片时要小心剔除小刺。800g约可片50片。"
+            },
+            {
+              "id": "scy_3",
+              "name": "鲈鱼",
+              "desc": "500g，肉质细嫩",
+              "score": 8,
+              "detail": "鲈鱼肉质细嫩，但价格较贵。片鱼片时更容易碎。500g约可片30片。"
+            }
+          ]
+        }
+      }
+    },
+    "sauerkraut": {
+      "name": "酸菜",
+      "icon": "🥬",
+      "amount": "1包四川泡酸菜（约200g）",
+      "options": {
+        "type": {
+          "label": "酸菜选择",
+          "options": [
+            {
+              "id": "scyk_1",
+              "name": "四川泡酸菜",
+              "desc": "200g，酸香正宗",
+              "score": 10,
+              "detail": "四川泡酸菜是最正宗的选择，酸度适中，香味浓郁。超市有卖袋装的，约200g。选颜色黄亮、闻起来酸香的。"
+            },
+            {
+              "id": "scyk_2",
+              "name": "东北酸菜",
+              "desc": "200g，酸度较低",
+              "score": 7,
+              "detail": "东北酸菜酸度较低，口感更温和。适合不太能吃酸的人。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep_fish": {
+      "name": "处理鱼片",
+      "description": "鱼片要片得薄而均匀，约10分钟",
+      "options": [
+        {
+          "id": "scy_p1",
+          "name": "片成3mm薄片+蛋清1个+淀粉1勺腌10分钟",
+          "desc": "嫩滑口感",
+          "tip": "鱼片3mm厚，顺着鱼刺方向片，不容易散。蛋清1个+淀粉1勺（10g）+少许盐（1\/4茶匙）腌10分钟。上浆后鱼片更嫩滑。片鱼时刀要锋利，一刀切到底。",
+          "params": {
+            "method": "上浆",
+            "time": "10分钟",
+            "thickness": "3mm",
+            "ingredients": [
+              "蛋清1个",
+              "淀粉1勺(10g)",
+              "盐1\/4茶匙"
+            ]
+          }
+        },
+        {
+          "id": "scy_p2",
+          "name": "切3cm块",
+          "desc": "家常做法，更简单",
+          "tip": "3cm鱼块比片鱼片简单。但口感不如鱼片嫩滑。",
+          "params": {
+            "method": "切块",
+            "size": "3cm"
+          }
+        }
+      ]
+    },
+    "fry_sauerkraut": {
+      "name": "炒酸菜",
+      "description": "酸菜要炒出香味，约3分钟",
+      "options": [
+        {
+          "id": "scy_f1",
+          "name": "中火炒酸菜至出香味(3分钟)",
+          "desc": "经典做法",
+          "tip": "酸菜200g挤干水分切丝。中火（约160度）炒3分钟至出香味。炒的时候加1汤匙油（15ml）。酸菜要挤干水分再炒，否则会出太多水。",
+          "params": {
+            "method": "炒酸菜",
+            "time": "3分钟",
+            "temp": "160度",
+            "oil": "1汤匙(15ml)",
+            "ingredients": [
+              "酸菜200g"
+            ]
+          }
+        },
+        {
+          "id": "scy_f2",
+          "name": "加油和干辣椒5个一起炒",
+          "desc": "更香",
+          "tip": "干辣椒5个剪段先炒香（30秒），再加酸菜炒3分钟。干辣椒增加辣味和香味。",
+          "params": {
+            "method": "加辣椒炒",
+            "time": "3.5分钟",
+            "ingredients": [
+              "干辣椒5个"
+            ]
+          }
+        }
+      ]
+    },
+    "cook_fish": {
+      "name": "煮鱼片",
+      "description": "鱼片要后放，快速煮熟",
+      "options": [
+        {
+          "id": "scy_c1",
+          "name": "汤底煮开后放鱼片，变色即出(1分钟)",
+          "desc": "嫩滑",
+          "tip": "汤底（酸菜+水\/高汤800ml）煮开后转小火，鱼片一片片下锅（不要一坨倒进去）。变色后立即捞出。约1分钟。千万不要大火煮，鱼片会碎。",
+          "params": {
+            "method": "快煮",
+            "time": "1分钟",
+            "water": "800ml"
+          }
+        },
+        {
+          "id": "scy_c2",
+          "name": "中火煮2分钟",
+          "desc": "确保熟透",
+          "tip": "中火煮2分钟确保熟透。但煮太久鱼片会碎。",
+          "params": {
+            "method": "慢煮",
+            "time": "2分钟"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "酸辣是灵魂",
+      "options": [
+        {
+          "id": "scy_s1",
+          "name": "泡椒5个+花椒1茶匙+白胡椒粉1\/2茶匙",
+          "desc": "经典酸辣",
+          "tip": "泡椒5个（约30g）切段+花椒1茶匙（2g）+白胡椒粉1\/2茶匙。泡椒是酸菜鱼的灵魂，提供酸辣味。",
+          "params": {
+            "style": "经典酸辣",
+            "ingredients": [
+              "泡椒5个(30g)",
+              "花椒1茶匙(2g)",
+              "白胡椒粉1\/2茶匙"
+            ]
+          }
+        },
+        {
+          "id": "scy_s2",
+          "name": "只用酸菜的酸味",
+          "desc": "清淡版",
+          "tip": "酸菜本身够酸可以不加醋。如果不够酸可以加1勺白醋。",
+          "params": {
+            "style": "清淡"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "浇热油激发香味",
+      "options": [
+        {
+          "id": "scy_f1",
+          "name": "撒花椒1茶匙+干辣椒5个+蒜末10g浇热油2汤匙",
+          "desc": "经典做法",
+          "tip": "花椒1茶匙（2g）+干辣椒5个剪段+蒜末10g铺在鱼片上。油2汤匙（30ml）烧到冒烟（250度）浇上去。滋滋响，香味四溢。",
+          "params": {
+            "method": "浇热油",
+            "oil": "2汤匙(30ml)",
+            "temp": "250度",
+            "ingredients": [
+              "花椒1茶匙(2g)",
+              "干辣椒5个",
+              "蒜末10g"
+            ]
+          }
+        },
+        {
+          "id": "scy_f2",
+          "name": "直接出锅",
+          "desc": "清淡版",
+          "tip": "少油更健康。酸菜本身已经有味道了。",
+          "params": {
+            "method": "不浇油"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 20,
+    "heat_control": 20,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 5
+  },
+  "standard_answers": {
+    "ingredients": {
+      "fish": {
+        "type": "scy_1"
+      },
+      "sauerkraut": {
+        "type": "scyk_1"
+      }
+    },
+    "cooking_flow": {
+      "prep_fish": "scy_p1",
+      "fry_sauerkraut": "scy_f1",
+      "cook_fish": "scy_c1",
+      "seasoning": "scy_s1",
+      "finish": "scy_f1"
+    },
+    "optimal_time": 25,
+    "tips": {
+      "perfect": "完美的酸菜鱼！酸辣开胃，鱼片嫩滑。黑鱼600g片3mm薄片上浆10分钟，四川泡酸菜200g炒3分钟出香味，汤底800ml。",
+      "good": "不错！酸菜炒得很香，鱼片嫩滑。",
+      "average": "还可以，鱼片不要煮太久，变色即可。",
+      "poose": "多练几次，片鱼是关键。3mm薄片+蛋清淀粉上浆10分钟。"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "dish": "白切鸡",
+  "cuisine": "粤菜",
+  "category": "chinese",
+  "difficulty": 2,
+  "cook_time": 30,
+  "servings": "2-3人份",
+  "calories": "约280大卡\/份",
+  "ingredients": {
+    "chicken": {
+      "name": "三黄鸡",
+      "icon": "🍗",
+      "amount": "1只三黄鸡（约1.5kg）",
+      "options": {
+        "size": {
+          "label": "大小",
+          "options": [
+            {
+              "id": "bqj_1",
+              "name": "整只三黄鸡(1.5kg)",
+              "desc": "经典做法，够2-3人",
+              "score": 10,
+              "detail": "三黄鸡是最适合做白切鸡的品种，皮薄肉嫩。选1.5kg左右的，太大肉质会老。"
+            },
+            {
+              "id": "bqj_2",
+              "name": "半只鸡(750g)",
+              "desc": "1-2人份",
+              "score": 7,
+              "detail": "半只鸡够1-2人。蒸煮时间减半（8分钟）。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "boil": {
+      "name": "煮鸡",
+      "description": "浸煮法让鸡肉更嫩，约25分钟",
+      "options": [
+        {
+          "id": "bqj_b1",
+          "name": "水开后放入鸡，关火浸15分钟",
+          "desc": "经典做法，嫩滑",
+          "tip": "大锅水烧开（约4升），放入整鸡。水再次烧开后关火，盖盖焖15分钟。浸煮比煮更嫩，水温保持在90度左右。",
+          "params": {
+            "method": "浸煮",
+            "time": "15分钟",
+            "water": "4升水"
+          }
+        },
+        {
+          "id": "bqj_b2",
+          "name": "小火慢煮20分钟",
+          "desc": "确保熟透",
+          "tip": "小火保持水温在85-90度（冒小泡不沸腾），煮20分钟。用筷子插入最厚处，没有血水即熟。",
+          "params": {
+            "method": "慢煮",
+            "time": "20分钟"
+          }
+        }
+      ]
+    },
+    "ice": {
+      "name": "冰镇",
+      "description": "冰水浸泡让鸡皮Q弹，约10分钟",
+      "options": [
+        {
+          "id": "bqj_i1",
+          "name": "冰水浸泡10分钟",
+          "desc": "皮脆肉嫩",
+          "tip": "冰水要够冰，加冰块效果最好。鸡煮好后立即放入冰水中浸泡10分钟。热胀冷缩让鸡皮更Q弹。",
+          "params": {
+            "method": "冰镇",
+            "time": "10分钟"
+          }
+        },
+        {
+          "id": "bqj_i2",
+          "name": "不冰镇",
+          "desc": "省事",
+          "tip": "不冰镇口感会差一些，鸡皮不够Q弹。但味道不影响。",
+          "params": {
+            "method": "不冰镇"
+          }
+        }
+      ]
+    },
+    "sauce": {
+      "name": "调蘸料",
+      "description": "姜葱油是灵魂，约3分钟",
+      "options": [
+        {
+          "id": "bqj_s1",
+          "name": "姜末30g+葱花20g+热油3汤匙+生抽2勺",
+          "desc": "经典蘸料",
+          "tip": "姜末30g+葱花20g铺在碗里。油3汤匙（45ml）烧到冒烟（250度）浇在姜葱上。再加生抽2勺（30ml）。姜要切末不要切片。",
+          "params": {
+            "style": "姜葱油",
+            "ingredients": [
+              "姜末30g",
+              "葱花20g",
+              "热油3汤匙(45ml)",
+              "生抽2勺(30ml)"
+            ]
+          }
+        },
+        {
+          "id": "bqj_s2",
+          "name": "沙姜+酱油",
+          "desc": "广东风味",
+          "tip": "沙姜30g切末+酱油2勺（30ml）。沙姜比普通姜更香，是广东白切鸡的标配。",
+          "params": {
+            "style": "沙姜",
+            "ingredients": [
+              "沙姜30g",
+              "酱油2勺(30ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "斩件装盘",
+      "options": [
+        {
+          "id": "bqj_f1",
+          "name": "斩件装盘浇姜葱油",
+          "desc": "经典做法",
+          "tip": "斩件要均匀，每块约3cm。摆盘要整齐，皮朝上。浇上姜葱油。斩件时刀要快，一刀到底。",
+          "params": {
+            "method": "斩件装盘"
+          }
+        },
+        {
+          "id": "bqj_f2",
+          "name": "手撕装盘",
+          "desc": "家常做法",
+          "tip": "手撕比刀切更嫩。撕成大块铺盘，浇姜葱油。",
+          "params": {
+            "method": "手撕装盘"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 15,
+    "heat_control": 25,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 5
+  },
+  "standard_answers": {
+    "ingredients": {
+      "chicken": {
+        "size": "bqj_1"
+      }
+    },
+    "cooking_flow": {
+      "boil": "bqj_b1",
+      "ice": "bqj_i1",
+      "sauce": "bqj_s1",
+      "finish": "bqj_f1"
+    },
+    "optimal_time": 30,
+    "tips": {
+      "perfect": "完美的白切鸡！皮脆肉嫩，姜葱油香。三黄鸡1.5kg水开后关火浸15分钟，冰水浸泡10分钟，姜末30g+葱花20g+热油3汤匙。",
+      "good": "不错！浸煮时间掌握得很好。鸡皮Q弹。",
+      "average": "还可以，冰镇步骤很重要，不要省略。",
+      "poose": "多练几次，浸煮法是关键。水开后关火浸15分钟。"
+    }
+  }
+}

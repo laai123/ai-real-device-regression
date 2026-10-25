@@ -1,0 +1,12 @@
+{
+  "user_id": 0,
+  "kitchen_type": "chinese",
+  "tools": [],
+  "profile": {
+    "nickname": "",
+    "spice_level": "适中",
+    "sweet_level": "适中",
+    "salt_level": "适中",
+    "dislike": []
+  }
+}

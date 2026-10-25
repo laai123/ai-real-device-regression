@@ -1,0 +1,172 @@
+{
+  "dish": "腊味合蒸",
+  "cuisine": "湘菜",
+  "category": "chinese",
+  "difficulty": 2,
+  "cook_time": 30,
+  "servings": "2-3人份",
+  "calories": "约450大卡\/份",
+  "ingredients": {
+    "meat": {
+      "name": "腊味",
+      "icon": "🥓",
+      "amount": "腊肉150g+腊肠2根(100g)+腊鱼100g",
+      "options": {
+        "type": {
+          "label": "腊味搭配",
+          "options": [
+            {
+              "id": "lwhz_1",
+              "name": "腊肉150g+腊肠2根+腊鱼100g",
+              "desc": "经典三件套",
+              "score": 10,
+              "detail": "腊肉150g+腊肠2根（约100g）+腊鱼100g。三种腊味口感不同，搭配起来更丰富。总共350g，够2-3人。"
+            },
+            {
+              "id": "lwhz_2",
+              "name": "腊肉200g+腊肠2根",
+              "desc": "简化版",
+              "score": 8,
+              "detail": "腊肉200g+腊肠2根（约100g）。两种腊味也很好吃，省去买腊鱼。"
+            },
+            {
+              "id": "lwhz_3",
+              "name": "只用腊肉250g",
+              "desc": "最简单",
+              "score": 6,
+              "detail": "只用腊肉250g。简单方便，但缺少口感层次。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理腊味",
+      "description": "腊味要切片，约5分钟",
+      "options": [
+        {
+          "id": "lwhz_p1",
+          "name": "腊味切5mm薄片",
+          "desc": "经典做法",
+          "tip": "腊肉150g切5mm薄片。腊肠2根斜切5mm片。腊鱼100g切3cm块。切好后用温水洗一下（约40度），去除表面盐分。",
+          "params": {
+            "method": "切片",
+            "thickness": "5mm"
+          }
+        },
+        {
+          "id": "lwhz_p2",
+          "name": "腊味切大块",
+          "desc": "大块口感",
+          "tip": "切大块蒸出来更香。但入味稍慢，需要蒸久一点。",
+          "params": {
+            "method": "切块",
+            "thickness": "2cm"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "lwhz_s1",
+          "name": "加豆豉1勺+辣椒2个",
+          "desc": "经典搭配",
+          "tip": "豆豉1勺（15g）+干辣椒2个切段。豆豉增加咸香味，干辣椒增加辣味。腊味本身已经很咸，不需要再加盐。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "豆豉1勺(15g)",
+              "干辣椒2个"
+            ]
+          }
+        },
+        {
+          "id": "lwhz_s2",
+          "name": "不加调料",
+          "desc": "原味",
+          "tip": "腊味本身已经很咸了，不需要再加调料。原味更能品尝腊味的风味。",
+          "params": {
+            "style": "原味"
+          }
+        }
+      ]
+    },
+    "steam": {
+      "name": "蒸制",
+      "description": "大火蒸制，约25分钟",
+      "options": [
+        {
+          "id": "lwhz_st1",
+          "name": "水开后大火蒸25分钟",
+          "desc": "标准时间",
+          "tip": "腊味要蒸透才香。水开后大火蒸25分钟。蒸好后盘里会有很多油和汤汁，这些是腊味的精华。",
+          "params": {
+            "time": "25分钟",
+            "temp": "大火"
+          }
+        },
+        {
+          "id": "lwhz_st2",
+          "name": "蒸20分钟",
+          "desc": "稍短",
+          "tip": "蒸太久腊味会太软。20分钟也可以，但口感稍差。",
+          "params": {
+            "time": "20分钟",
+            "temp": "大火"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅装盘",
+      "options": [
+        {
+          "id": "lwhz_f1",
+          "name": "出锅撒葱花10g",
+          "desc": "经典装盘",
+          "tip": "葱花10g增加香味和颜色。腊味蒸出来油光发亮，非常诱人。",
+          "params": {
+            "method": "撒葱花出锅",
+            "ingredients": [
+              "葱花10g"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 15,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "meat": {
+        "type": "lwhz_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "lwhz_p1",
+      "seasoning": "lwhz_s1",
+      "steam": "lwhz_st1",
+      "finish": "lwhz_f1"
+    },
+    "optimal_time": 30,
+    "tips": {
+      "perfect": "完美的腊味合蒸！腊香浓郁，咸鲜可口。腊肉150g+腊肠2根+腊鱼100g切5mm片，加豆豉1勺，水开后大火蒸25分钟。",
+      "good": "不错！腊味蒸得很香。三种腊味搭配很好。",
+      "average": "还可以，腊味要蒸透才香。蒸25分钟。",
+      "poose": "多练几次，腊味品质是关键。选好腊味，蒸出来才香。"
+    }
+  }
+}

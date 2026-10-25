@@ -1,0 +1,321 @@
+{
+  "dish": "番茄炒蛋",
+  "cuisine": "家常菜",
+  "category": "chinese",
+  "difficulty": 1,
+  "cook_time": 10,
+  "servings": "2人份",
+  "calories": "约280大卡\/份",
+  "ingredients": {
+    "tomato": {
+      "name": "番茄",
+      "icon": "🍅",
+      "amount": "2个中等大小（约400g）",
+      "options": {
+        "count": {
+          "label": "数量",
+          "options": [
+            {
+              "id": "tomato_1",
+              "name": "2个中等大小",
+              "desc": "约400g，酸甜适中",
+              "score": 10,
+              "detail": "选红透的番茄，捏起来微软的最甜。2个约400g，够2人份。"
+            },
+            {
+              "id": "tomato_2",
+              "name": "3个小番茄",
+              "desc": "约300g，更酸甜",
+              "score": 8,
+              "detail": "小番茄皮薄汁多，但酸味更重。适合喜欢酸甜口味的人。"
+            },
+            {
+              "id": "tomato_3",
+              "name": "1个大番茄",
+              "desc": "约350g，汁水多",
+              "score": 7,
+              "detail": "大番茄水分多，炒出来汁水丰富。适合浇饭吃。"
+            }
+          ]
+        },
+        "cut": {
+          "label": "切法",
+          "options": [
+            {
+              "id": "tomato_cut_1",
+              "name": "切块",
+              "desc": "3cm见方，口感饱满",
+              "score": 10,
+              "detail": "3cm方块受热均匀，保留汁水。切的时候不要切太碎，否则会炒成泥。"
+            },
+            {
+              "id": "tomato_cut_2",
+              "name": "切片",
+              "desc": "5mm厚片，受热均匀",
+              "score": 8,
+              "detail": "5mm厚片更容易出汁，但口感不如块状饱满。"
+            },
+            {
+              "id": "tomato_cut_3",
+              "name": "切丁",
+              "desc": "1cm小丁，快速出汁",
+              "score": 7,
+              "detail": "1cm小丁出汁最快，适合浇饭。但炒的时候容易烂。"
+            }
+          ]
+        }
+      }
+    },
+    "egg": {
+      "name": "鸡蛋",
+      "icon": "🥚",
+      "amount": "3个（约150g）",
+      "options": {
+        "count": {
+          "label": "数量",
+          "options": [
+            {
+              "id": "egg_1",
+              "name": "3个",
+              "desc": "约150g，蛋香浓郁",
+              "score": 10,
+              "detail": "3个鸡蛋配2个番茄是黄金比例。蛋液约150ml，炒出来蓬松饱满。"
+            },
+            {
+              "id": "egg_2",
+              "name": "4个",
+              "desc": "约200g，蛋量充足",
+              "score": 9,
+              "detail": "4个鸡蛋适合蛋多番茄少的口味。蛋香更浓郁。"
+            },
+            {
+              "id": "egg_3",
+              "name": "2个",
+              "desc": "约100g，清淡简单",
+              "score": 7,
+              "detail": "2个鸡蛋适合番茄多的情况。蛋量少，更清爽。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "beat_egg": {
+      "name": "打蛋",
+      "description": "蛋液的处理决定口感，要打散打匀",
+      "options": [
+        {
+          "id": "egg_a1",
+          "name": "加少许盐(1\/4茶匙)打散",
+          "desc": "基础做法，蛋味纯粹",
+          "tip": "加盐可以让蛋更有味道，但不要加太多，后面还要调味。用筷子或打蛋器打30下至起泡。",
+          "params": {
+            "seasoning": "盐1\/4茶匙"
+          }
+        },
+        {
+          "id": "egg_a2",
+          "name": "加几滴料酒(1\/2茶匙)",
+          "desc": "去腥增香",
+          "tip": "料酒可以去除鸡蛋的腥味，让蛋更香。加1\/2茶匙即可，不要太多。",
+          "params": {
+            "seasoning": "料酒1\/2茶匙"
+          }
+        },
+        {
+          "id": "egg_a3",
+          "name": "加少许水淀粉(1汤匙)",
+          "desc": "蛋更嫩滑",
+          "tip": "水淀粉可以让蛋更嫩滑蓬松。1汤匙淀粉+2汤匙水调匀加入蛋液。",
+          "params": {
+            "seasoning": "水淀粉1汤匙"
+          }
+        }
+      ]
+    },
+    "cook_egg": {
+      "name": "炒蛋",
+      "description": "蛋的炒法影响嫩滑程度，大火快炒是关键",
+      "options": [
+        {
+          "id": "egg_b1",
+          "name": "大火快炒至刚凝固(30秒)",
+          "desc": "嫩滑蓬松",
+          "tip": "油温七成热（约210度）下蛋液，不要翻动太勤，等底部凝固再翻。蛋液刚凝固就盛出，余温会继续加热。",
+          "params": {
+            "method": "快炒",
+            "time": "30秒",
+            "temp": "210度"
+          }
+        },
+        {
+          "id": "egg_b2",
+          "name": "中火慢炒至金黄(1分钟)",
+          "desc": "蛋香浓郁",
+          "tip": "中火（约160度）慢炒，蛋会更香但口感偏老。适合喜欢焦香蛋的人。",
+          "params": {
+            "method": "慢炒",
+            "time": "1分钟",
+            "temp": "160度"
+          }
+        },
+        {
+          "id": "egg_b3",
+          "name": "滑炒至八成熟盛出(40秒)",
+          "desc": "回锅后更嫩",
+          "tip": "蛋液八成熟（还有点流动）就盛出，回锅时刚好全熟。这是饭店常用手法。",
+          "params": {
+            "method": "滑炒",
+            "time": "40秒",
+            "temp": "180度"
+          }
+        }
+      ]
+    },
+    "cook_tomato": {
+      "name": "炒番茄",
+      "description": "番茄出汁程度影响酸甜口感",
+      "options": [
+        {
+          "id": "tomato_b1",
+          "name": "大火快炒断生(1分钟)",
+          "desc": "保持口感",
+          "tip": "大火快炒1分钟，番茄刚好断生，酸甜适中。不要炒太久，否则会烂。",
+          "params": {
+            "method": "快炒",
+            "time": "1分钟",
+            "temp": "200度"
+          }
+        },
+        {
+          "id": "tomato_b2",
+          "name": "中火炒出汁水(2分钟)",
+          "desc": "汁水丰富",
+          "tip": "中火（约160度）炒2分钟，番茄会出很多汁。适合浇饭吃。可以加1汤匙番茄酱增色。",
+          "params": {
+            "method": "炒汁",
+            "time": "2分钟",
+            "temp": "160度"
+          }
+        },
+        {
+          "id": "tomato_b3",
+          "name": "加少许糖(1\/2茶匙)炒化(2分钟)",
+          "desc": "中和酸味",
+          "tip": "番茄酸味重时加1\/2茶匙糖，可以中和酸味让口感更柔和。糖要在番茄出汁后加。",
+          "params": {
+            "method": "加糖炒",
+            "time": "2分钟",
+            "temp": "160度"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "调味决定这道菜的灵魂，简单但要精准",
+      "options": [
+        {
+          "id": "tomato_s1",
+          "name": "盐1\/2茶匙+少许糖(1\/4茶匙)",
+          "desc": "经典家常味",
+          "tip": "盐最后放，因为番茄本身有酸味。1\/4茶匙糖提鲜，吃不出甜味。出锅前撒少许葱花增香。",
+          "params": {
+            "style": "家常",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "糖1\/4茶匙"
+            ]
+          }
+        },
+        {
+          "id": "tomato_s2",
+          "name": "盐1\/2茶匙+番茄酱(1汤匙)",
+          "desc": "色泽红亮，味道浓郁",
+          "tip": "番茄酱可以让颜色更红亮，味道更浓郁。超市有卖现成的番茄酱。",
+          "params": {
+            "style": "浓郁",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "番茄酱1汤匙"
+            ]
+          }
+        },
+        {
+          "id": "tomato_s3",
+          "name": "盐1\/2茶匙+鸡精(1\/4茶匙)+葱花",
+          "desc": "提鲜增香",
+          "tip": "鸡精要在出锅前加，高温久煮鲜味会流失。葱花最后撒。",
+          "params": {
+            "style": "提鲜",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "鸡精1\/4茶匙",
+              "葱花适量"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅时机影响口感",
+      "options": [
+        {
+          "id": "tomato_f1",
+          "name": "翻炒均匀立即出锅(15秒)",
+          "desc": "蛋嫩汁多，最佳状态",
+          "tip": "蛋和番茄混合后翻炒10-15秒即可出锅。不要炒太久，蛋会变老。",
+          "params": {
+            "method": "快炒出锅",
+            "time": "15秒"
+          }
+        },
+        {
+          "id": "tomato_f2",
+          "name": "焖30秒入味",
+          "desc": "味道融合，更适合浇饭",
+          "tip": "盖盖焖30秒让番茄汁渗入蛋中。焖好后大火收一下汁再出锅。",
+          "params": {
+            "method": "焖后出锅",
+            "time": "30秒"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 25,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "tomato": {
+        "count": "tomato_1",
+        "cut": "tomato_cut_1"
+      },
+      "egg": {
+        "count": "egg_1"
+      }
+    },
+    "cooking_flow": {
+      "beat_egg": "egg_a1",
+      "cook_egg": "egg_b1",
+      "cook_tomato": "tomato_b2",
+      "seasoning": "tomato_s1",
+      "finish": "tomato_f1"
+    },
+    "optimal_time": 10,
+    "tips": {
+      "perfect": "完美的番茄炒蛋！蛋嫩汁鲜，酸甜适口。蛋液大火快炒至刚凝固盛出，番茄中火炒出汁后加入蛋块翻匀。",
+      "good": "不错！番茄炒蛋就是这个味儿。蛋炒得嫩，番茄出汁够。",
+      "average": "还可以，蛋不要炒太老，番茄要炒出汁。",
+      "poose": "多练几次，掌握蛋和番茄的比例，火候是关键。"
+    }
+  }
+}

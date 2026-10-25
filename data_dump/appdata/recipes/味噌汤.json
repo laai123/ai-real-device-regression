@@ -1,0 +1,210 @@
+{
+  "dish": "味噌汤",
+  "cuisine": "日料",
+  "category": "japanese",
+  "difficulty": 1,
+  "cook_time": 10,
+  "servings": "2人份",
+  "calories": "约80大卡\/份",
+  "ingredients": {
+    "miso": {
+      "name": "味噌",
+      "icon": "🫕",
+      "amount": "2勺味噌（约30g）",
+      "options": {
+        "type": {
+          "label": "味噌选择",
+          "options": [
+            {
+              "id": "wct_1",
+              "name": "白味噌",
+              "desc": "2勺约30g，味道温和",
+              "score": 10,
+              "detail": "白味噌味道温和，适合初学者。颜色浅，口感甜润。超市有卖盒装的。"
+            },
+            {
+              "id": "wct_2",
+              "name": "红味噌",
+              "desc": "2勺约30g，味道浓郁",
+              "score": 8,
+              "detail": "红味噌发酵时间长，味道更浓郁咸鲜。适合喜欢重口味的人。"
+            },
+            {
+              "id": "wct_3",
+              "name": "混合味噌",
+              "desc": "2勺约30g，平衡味道",
+              "score": 9,
+              "detail": "混合味噌是白味噌和红味噌的混合，味道平衡。最百搭的选择。"
+            }
+          ]
+        }
+      }
+    },
+    "ingredients": {
+      "name": "配料",
+      "icon": "🥬",
+      "amount": "嫩豆腐100g+海带10g+葱花5g",
+      "options": {
+        "type": {
+          "label": "配料选择",
+          "options": [
+            {
+              "id": "wct_i1",
+              "name": "嫩豆腐100g+海带10g+葱花5g",
+              "desc": "经典搭配",
+              "score": 10,
+              "detail": "嫩豆腐100g切1cm小块+干海带10g泡软切段+葱花5g。这是味噌汤的经典配料。"
+            },
+            {
+              "id": "wct_i2",
+              "name": "嫩豆腐100g+海带10g+金针菇50g",
+              "desc": "更丰富",
+              "score": 9,
+              "detail": "加金针菇50g增加口感。金针菇不要煮太久，30秒即可。"
+            },
+            {
+              "id": "wct_i3",
+              "name": "只用豆腐100g",
+              "desc": "最简单",
+              "score": 7,
+              "detail": "只用豆腐100g。简单方便，但口感单调。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "准备食材",
+      "description": "豆腐切块，海带泡软，约5分钟",
+      "options": [
+        {
+          "id": "wct_p1",
+          "name": "豆腐切1cm小块，海带泡软切段",
+          "desc": "经典处理",
+          "tip": "嫩豆腐100g切1cm小块。干海带10g用温水泡10分钟至软，切2cm段。海带不要泡太久，会变黏。",
+          "params": {
+            "method": "标准处理",
+            "time": "5分钟"
+          }
+        }
+      ]
+    },
+    "cook": {
+      "name": "煮汤底",
+      "description": "海带和出汁煮汤，约5分钟",
+      "options": [
+        {
+          "id": "wct_c1",
+          "name": "水800ml+海带10g煮5分钟",
+          "desc": "经典做法",
+          "tip": "水800ml+海带10g。大火烧开后转小火煮5分钟。海带不要煮太久（超过10分钟会变黏），煮好后捞出海带。",
+          "params": {
+            "method": "煮海带",
+            "time": "5分钟",
+            "water": "800ml",
+            "ingredients": [
+              "海带10g"
+            ]
+          }
+        },
+        {
+          "id": "wct_c2",
+          "name": "用出汁（日式高汤）800ml",
+          "desc": "更正宗",
+          "tip": "出汁可以用鲣鱼花+海带做。或者用出汁粉（だしの素）1勺+水800ml代替。味道更正宗。",
+          "params": {
+            "method": "出汁煮",
+            "water": "出汁800ml"
+          }
+        }
+      ]
+    },
+    "add_miso": {
+      "name": "加味噌",
+      "description": "味噌要离火溶解，不能煮沸",
+      "options": [
+        {
+          "id": "wct_a1",
+          "name": "关火后用滤网溶解味噌2勺",
+          "desc": "经典做法",
+          "tip": "关火后用小滤网放入味噌2勺（30g），用勺子在滤网里搅拌溶解。味噌不能煮沸，否则鲜味会流失。",
+          "params": {
+            "method": "离火溶解",
+            "ingredients": [
+              "味噌2勺(30g)"
+            ]
+          }
+        }
+      ]
+    },
+    "add_ingredients": {
+      "name": "加配料",
+      "description": "豆腐和葱花最后放",
+      "options": [
+        {
+          "id": "wct_i1",
+          "name": "加入豆腐100g煮2分钟+葱花5g",
+          "desc": "经典做法",
+          "tip": "豆腐100g切块后煮2分钟。不要煮太久，保持嫩滑。出锅前撒葱花5g。",
+          "params": {
+            "method": "加豆腐葱花",
+            "time": "2分钟",
+            "ingredients": [
+              "豆腐100g",
+              "葱花5g"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅即可",
+      "options": [
+        {
+          "id": "wct_f1",
+          "name": "出锅装碗",
+          "desc": "经典做法",
+          "tip": "味噌汤要趁热喝。冷了味道会变酸。每人一碗，约400ml。",
+          "params": {
+            "method": "出锅"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 15,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 20,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "miso": {
+        "type": "wct_1"
+      },
+      "ingredients": {
+        "type": "wct_i1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "wct_p1",
+      "cook": "wct_c1",
+      "add_miso": "wct_a1",
+      "add_ingredients": "wct_i1",
+      "finish": "wct_f1"
+    },
+    "optimal_time": 10,
+    "tips": {
+      "perfect": "完美的味噌汤！鲜美可口，暖胃暖心。白味噌2勺离火溶解，水800ml+海带10g煮5分钟，豆腐100g煮2分钟。",
+      "good": "不错！味噌溶解得很好。汤底鲜美。",
+      "average": "还可以，味噌不能煮沸，否则鲜味会流失。",
+      "poose": "多练几次，味噌溶解是关键。关火后用滤网溶解。"
+    }
+  }
+}

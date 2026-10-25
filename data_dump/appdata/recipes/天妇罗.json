@@ -1,0 +1,227 @@
+{
+  "dish": "天妇罗",
+  "cuisine": "日料",
+  "category": "japanese",
+  "difficulty": 2,
+  "cook_time": 20,
+  "servings": "2人份",
+  "calories": "约350大卡\/份",
+  "ingredients": {
+    "shrimp": {
+      "name": "大虾",
+      "icon": "🦐",
+      "amount": "10只大虾（约200g）",
+      "options": {
+        "count": {
+          "label": "数量",
+          "options": [
+            {
+              "id": "tfl_1",
+              "name": "10只",
+              "desc": "约200g，1-2人份",
+              "score": 10,
+              "detail": "10只大虾约200g，够1-2人。选新鲜的、壳硬的虾。天妇罗的虾要大只才好看。"
+            },
+            {
+              "id": "tfl_2",
+              "name": "20只",
+              "desc": "约400g，3-4人份",
+              "score": 9,
+              "detail": "20只虾够3-4人。可以虾+蔬菜搭配着炸。"
+            }
+          ]
+        }
+      }
+    },
+    "vegetable": {
+      "name": "蔬菜天妇罗",
+      "icon": "🍆",
+      "amount": "红薯1个+茄子1个+南瓜100g",
+      "options": {
+        "type": {
+          "label": "蔬菜选择",
+          "options": [
+            {
+              "id": "tfv_1",
+              "name": "红薯1个+茄子1个+南瓜100g",
+              "desc": "经典蔬菜搭配",
+              "score": 10,
+              "detail": "红薯1个切5mm片+茄子1个切5mm片+南瓜100g切5mm片。三种蔬菜颜色搭配好看。"
+            },
+            {
+              "id": "tfv_2",
+              "name": "只炸虾",
+              "desc": "纯虾版",
+              "score": 7,
+              "detail": "只炸虾，简单方便。但缺少蔬菜的清爽感。"
+            },
+            {
+              "id": "tfv_3",
+              "name": "虾+香菇+秋葵",
+              "desc": "菌菇版",
+              "score": 8,
+              "detail": "虾+香菇3朵+秋葵5根。菌菇和秋葵口感独特。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理虾",
+      "description": "虾要处理干净，约5分钟",
+      "options": [
+        {
+          "id": "tfl_p1",
+          "name": "去壳去虾线，腹部划3刀防卷曲",
+          "desc": "经典处理",
+          "tip": "去壳留尾，去掉虾线。腹部划3刀（深1mm）防止炸的时候卷曲。划刀后把虾拉直。",
+          "params": {
+            "method": "划刀防卷",
+            "cuts": "腹部划3刀"
+          }
+        }
+      ]
+    },
+    "batter": {
+      "name": "调面糊",
+      "description": "天妇罗面糊要冰凉，保持颗粒感",
+      "options": [
+        {
+          "id": "tfl_b1",
+          "name": "冰水150ml+低筋面粉80g+鸡蛋1个，不要搅拌太匀",
+          "desc": "经典做法",
+          "tip": "冰水150ml+低筋面粉80g+鸡蛋1个。搅拌5-6下即可，保持颗粒感。搅拌太匀会起筋，炸出来不酥。面糊要冰凉，可以加几块冰。",
+          "params": {
+            "method": "冰水面糊",
+            "ingredients": [
+              "冰水150ml",
+              "低筋面粉80g",
+              "鸡蛋1个"
+            ]
+          }
+        },
+        {
+          "id": "tfl_b2",
+          "name": "用现成的天妇罗粉100g",
+          "desc": "省事",
+          "tip": "天妇罗粉100g+冰水160ml搅匀。现成粉方便但口感稍差。",
+          "params": {
+            "method": "现成粉",
+            "ingredients": [
+              "天妇罗粉100g",
+              "冰水160ml"
+            ]
+          }
+        }
+      ]
+    },
+    "fry": {
+      "name": "炸虾",
+      "description": "油温控制是关键",
+      "options": [
+        {
+          "id": "tfl_f1",
+          "name": "170度油温炸至金黄(3分钟)",
+          "desc": "经典做法",
+          "tip": "油温170度（筷子插入冒小泡）。虾裹面糊后下锅，炸3分钟至金黄浮起。油要没过虾。炸好后捞出沥油。",
+          "params": {
+            "method": "170度炸",
+            "time": "3分钟",
+            "temp": "170度"
+          }
+        },
+        {
+          "id": "tfl_f2",
+          "name": "180度大火快炸(2分钟)",
+          "desc": "更脆",
+          "tip": "180度大火快炸2分钟。更酥脆但容易外面焦里面生。适合薄的食材。",
+          "params": {
+            "method": "180度炸",
+            "time": "2分钟",
+            "temp": "180度"
+          }
+        }
+      ]
+    },
+    "sauce": {
+      "name": "蘸汁",
+      "description": "天妇罗蘸汁",
+      "options": [
+        {
+          "id": "tfl_s1",
+          "name": "天妇罗蘸汁+萝卜泥",
+          "desc": "经典吃法",
+          "tip": "天妇罗蘸汁（日式酱油+味醂+出汁）+白萝卜泥。萝卜泥可以解腻。超市有卖现成的天妇罗蘸汁。",
+          "params": {
+            "method": "蘸汁+萝卜泥",
+            "ingredients": [
+              "天妇罗蘸汁适量",
+              "白萝卜泥适量"
+            ]
+          }
+        },
+        {
+          "id": "tfl_s2",
+          "name": "蘸海盐",
+          "desc": "简单吃法",
+          "tip": "海盐更香。可以在海盐里加少许抹茶粉，颜色更好看。",
+          "params": {
+            "method": "蘸盐",
+            "ingredients": [
+              "海盐适量"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "装盘沥油",
+      "options": [
+        {
+          "id": "tfl_f1",
+          "name": "放吸油纸上桌",
+          "desc": "经典装盘",
+          "tip": "吸油纸可以吸收多余油脂。天妇罗要趁热吃，凉了就不酥脆了。",
+          "params": {
+            "method": "吸油纸上桌"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 30,
+    "seasoning": 20,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "shrimp": {
+        "count": "tfl_1"
+      },
+      "vegetable": {
+        "type": "tfv_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "tfl_p1",
+      "batter": "tfl_b1",
+      "fry": "tfl_f1",
+      "sauce": "tfl_s1",
+      "finish": "tfl_f1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的天妇罗！外酥里嫩，虾肉Q弹。面糊用冰水150ml+低筋面粉80g+鸡蛋1个，保持颗粒感。油温170度炸3分钟。",
+      "good": "不错！面糊调得很好，虾炸得酥脆。",
+      "average": "还可以，油温是关键。170度筷子冒小泡即可。",
+      "poose": "多练几次，面糊和油温是关键。面糊要冰凉，保持颗粒感。"
+    }
+  }
+}

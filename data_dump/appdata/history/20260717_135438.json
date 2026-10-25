@@ -1,0 +1,29 @@
+{
+  "record_id": 1784267678101,
+  "user_id": "test",
+  "dish": "麻婆豆腐",
+  "total_time": 1,
+  "score": {
+    "total": 30,
+    "breakdown": {
+      "knife_skills": 10,
+      "heat_control": 0,
+      "seasoning": 0,
+      "step_order": 0,
+      "time_efficiency": 10,
+      "creativity": 10
+    },
+    "feedback": "多练几次，豆瓣酱的炒制是关键。小火炒2分钟至出红油。\n\n💡 火候控制可以改进，注意不同步骤的火力大小。\n💡 调味方面可以尝试更正宗的搭配。\n"
+  },
+  "ingredient_choices": [
+    "ingredient_tofu_type:tofu_1",
+    "ingredient_tofu_cut:tofu_cut_1",
+    "ingredient_minced_pork_amount:pork_1"
+  ],
+  "selected_options": [
+    "cook_pork:pork_b3",
+    "seasoning:tofu_s2",
+    "finish:tofu_f3"
+  ],
+  "created_at": "2026-07-17 13:54:38"
+}

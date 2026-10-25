@@ -1,0 +1,241 @@
+{
+  "dish": "虾饺皇",
+  "cuisine": "粤菜",
+  "category": "chinese",
+  "difficulty": 3,
+  "cook_time": 40,
+  "servings": "2人份（约12个）",
+  "calories": "约300大卡\/份",
+  "ingredients": {
+    "shrimp": {
+      "name": "鲜虾",
+      "icon": "🦐",
+      "amount": "300g鲜虾（约20只）",
+      "options": {
+        "count": {
+          "label": "用量",
+          "options": [
+            {
+              "id": "xjh_1",
+              "name": "300g鲜虾（约20只）",
+              "desc": "做12个虾饺",
+              "score": 10,
+              "detail": "300g鲜虾约20只，去壳后约200g虾仁。每个虾饺用15-20g虾仁。选壳硬、颜色青亮的新鲜虾。"
+            },
+            {
+              "id": "xjh_2",
+              "name": "500g鲜虾（约30只）",
+              "desc": "做20个虾饺",
+              "score": 9,
+              "detail": "500g约30只，去壳后约350g虾仁。够做20个虾饺。"
+            }
+          ]
+        }
+      }
+    },
+    "wrapper": {
+      "name": "饺子皮",
+      "icon": "🥟",
+      "amount": "澄面100g+生粉30g+开水150ml",
+      "options": {
+        "type": {
+          "label": "皮的选择",
+          "options": [
+            {
+              "id": "xjw_1",
+              "name": "澄面100g+生粉30g+开水150ml",
+              "desc": "经典做法，透明Q弹",
+              "score": 10,
+              "detail": "澄面100g+生粉30g+开水150ml（约85度）。开水要够热，倒进去要快速搅拌。揉光滑后醒10分钟。"
+            },
+            {
+              "id": "xjw_2",
+              "name": "买现成的饺子皮",
+              "desc": "省事",
+              "score": 7,
+              "detail": "买不到澄面皮可以用普通饺子皮。但口感不如澄面皮透明Q弹。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理虾仁",
+      "description": "虾仁要处理干净，约10分钟",
+      "options": [
+        {
+          "id": "xjh_p1",
+          "name": "去壳去虾线，部分拍碎部分保留",
+          "desc": "经典做法",
+          "tip": "300g虾去壳去虾线。约2\/3拍碎（让虾仁出胶），1\/3保持整只（增加口感）。拍碎时用刀面轻拍，不要拍成泥。",
+          "params": {
+            "method": "拍碎+整虾"
+          }
+        }
+      ]
+    },
+    "dough": {
+      "name": "做饺子皮",
+      "description": "澄面皮是虾饺的关键，约15分钟",
+      "options": [
+        {
+          "id": "xjh_d1",
+          "name": "澄面100g+生粉30g+开水150ml烫面",
+          "desc": "经典做法",
+          "tip": "澄面100g+生粉30g混合。开水150ml（约85度）倒入，快速搅拌。揉成光滑面团，盖保鲜膜醒10分钟。面团要趁热揉，凉了会变硬。",
+          "params": {
+            "method": "烫面",
+            "time": "15分钟",
+            "ingredients": [
+              "澄面100g",
+              "生粉30g",
+              "开水150ml"
+            ]
+          }
+        },
+        {
+          "id": "xjh_d2",
+          "name": "买现成的饺子皮（约20张）",
+          "desc": "省事",
+          "tip": "买不到澄面皮可以用普通饺子皮。但口感不如澄面皮透明Q弹。用擀面杖擀薄一点再用。",
+          "params": {
+            "method": "买皮",
+            "amount": "约20张"
+          }
+        }
+      ]
+    },
+    "filling": {
+      "name": "调馅",
+      "description": "虾仁馅要调味",
+      "options": [
+        {
+          "id": "xjh_f1",
+          "name": "虾仁200g+肥膘30g+盐1\/2茶匙+糖1\/4茶匙+白胡椒1\/4茶匙",
+          "desc": "经典馅料",
+          "tip": "虾仁200g（拍碎+整虾混合）+肥膘30g切小丁+盐1\/2茶匙+糖1\/4茶匙+白胡椒1\/4茶匙。肥膘增加油润感。搅拌至起胶（约50下）。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "虾仁200g",
+              "肥膘30g",
+              "盐1\/2茶匙",
+              "糖1\/4茶匙",
+              "白胡椒1\/4茶匙"
+            ]
+          }
+        },
+        {
+          "id": "xjh_f2",
+          "name": "虾仁200g+笋丁30g+盐1\/2茶匙",
+          "desc": "清爽版",
+          "tip": "虾仁200g+笋丁30g+盐1\/2茶匙。笋丁增加口感。",
+          "params": {
+            "style": "清爽",
+            "ingredients": [
+              "虾仁200g",
+              "笋丁30g",
+              "盐1\/2茶匙"
+            ]
+          }
+        }
+      ]
+    },
+    "wrap": {
+      "name": "包虾饺",
+      "description": "包法要漂亮，约15分钟",
+      "options": [
+        {
+          "id": "xjh_w1",
+          "name": "月牙形褶子（约8-10个褶）",
+          "desc": "经典造型",
+          "tip": "澄面皮擀成8cm圆片，放15-20g馅料。对折后从一端开始捏褶子，约8-10个褶。褶子要均匀，皮要薄。",
+          "params": {
+            "method": "月牙形",
+            "wrappers": "约12个"
+          }
+        },
+        {
+          "id": "xjh_w2",
+          "name": "简单对折",
+          "desc": "家常做法",
+          "tip": "对折捏紧即可。简单但不太好看。",
+          "params": {
+            "method": "对折",
+            "wrappers": "约12个"
+          }
+        }
+      ]
+    },
+    "steam": {
+      "name": "蒸制",
+      "description": "大火蒸制，时间要精确",
+      "options": [
+        {
+          "id": "xjh_st1",
+          "name": "水开后大火蒸8分钟",
+          "desc": "标准时间",
+          "tip": "蒸笼刷油防粘，虾饺摆好间距2cm。水开后大火蒸8分钟。蒸太久皮会破。",
+          "params": {
+            "time": "8分钟",
+            "temp": "大火"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅装盘",
+      "options": [
+        {
+          "id": "xjh_f1",
+          "name": "出锅蘸醋和姜丝",
+          "desc": "经典吃法",
+          "tip": "醋（镇江香醋最佳）+姜丝。醋可以解腻。趁热吃，皮Q弹馅鲜嫩。",
+          "params": {
+            "method": "蘸醋吃",
+            "ingredients": [
+              "醋适量",
+              "姜丝适量"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 15,
+    "heat_control": 15,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "shrimp": {
+        "count": "xjh_1"
+      },
+      "wrapper": {
+        "type": "xjw_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "xjh_p1",
+      "dough": "xjh_d1",
+      "filling": "xjh_f1",
+      "wrap": "xjh_w1",
+      "steam": "xjh_st1",
+      "finish": "xjh_f1"
+    },
+    "optimal_time": 40,
+    "tips": {
+      "perfect": "完美的虾饺皇！皮薄馅大，鲜嫩多汁。澄面皮8cm圆片包15-20g馅料，月牙形8-10褶，水开后大火蒸8分钟。",
+      "good": "不错！虾饺包得很漂亮。皮很透明。",
+      "average": "还可以，皮要擀薄。澄面皮要趁热揉。",
+      "poose": "多练几次，包法是关键。月牙形褶子是虾饺的经典造型。"
+    }
+  }
+}

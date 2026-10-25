@@ -1,0 +1,27 @@
+{
+  "record_id": 1784354121857,
+  "user_id": "test",
+  "dish": "回锅肉",
+  "total_time": 1,
+  "score": {
+    "total": 50,
+    "breakdown": {
+      "knife_skills": 5,
+      "heat_control": 25,
+      "seasoning": 0,
+      "step_order": 0,
+      "time_efficiency": 10,
+      "creativity": 10
+    },
+    "feedback": "多练几次，煸炒和调味是关键。灯盏窝是回锅肉的灵魂。\n\n💡 调味方面可以尝试更正宗的搭配。\n💡 食材处理可以更精细，注意切法和厚度。\n"
+  },
+  "ingredient_choices": [
+    "ingredient_pork_cut:hg_1",
+    "ingredient_vegetable_type:hgv_2"
+  ],
+  "selected_options": [
+    "seasoning:hg_s2",
+    "finish:hg_fi2"
+  ],
+  "created_at": "2026-07-18 13:55:21"
+}

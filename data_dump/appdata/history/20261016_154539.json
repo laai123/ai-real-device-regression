@@ -1,0 +1,29 @@
+{
+  "record_id": 1792136739043,
+  "user_id": "test",
+  "dish": "麻婆豆腐",
+  "total_time": 1,
+  "score": {
+    "total": 86,
+    "breakdown": {
+      "knife_skills": 6,
+      "heat_control": 25,
+      "seasoning": 25,
+      "step_order": 20,
+      "time_efficiency": 10,
+      "creativity": 0
+    },
+    "feedback": "不错！麻婆豆腐做得很地道。豆瓣酱炒出了红油，豆腐嫩滑。\n\n💡 食材处理可以更精细，注意切法和厚度。\n"
+  },
+  "ingredient_choices": [
+    "ingredient_tofu_type:tofu_2",
+    "ingredient_tofu_cut:tofu_cut_1",
+    "ingredient_minced_pork_amount:pork_1"
+  ],
+  "selected_options": [
+    "cook_pork:pork_b1",
+    "seasoning:tofu_s1",
+    "finish:tofu_f1"
+  ],
+  "created_at": "2026-10-16 15:45:39"
+}

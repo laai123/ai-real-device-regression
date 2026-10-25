@@ -1,0 +1,238 @@
+{
+  "dish": "干煸四季豆",
+  "cuisine": "川菜",
+  "category": "chinese",
+  "difficulty": 1,
+  "cook_time": 12,
+  "servings": "2人份",
+  "calories": "约200大卡\/份",
+  "ingredients": {
+    "beans": {
+      "name": "四季豆",
+      "icon": "🫛",
+      "amount": "300g四季豆（约15根）",
+      "options": {
+        "prep": {
+          "label": "处理方式",
+          "options": [
+            {
+              "id": "gbsj_1",
+              "name": "掰成5cm段去筋",
+              "desc": "经典做法",
+              "score": 10,
+              "detail": "四季豆掰成5cm段，去掉两侧的筋。筋会影响口感。掰的时候从两端向中间掰，筋会自然撕下来。300g约15根。"
+            },
+            {
+              "id": "gbsj_2",
+              "name": "切5cm段",
+              "desc": "更整齐",
+              "score": 8,
+              "detail": "切段比掰段更整齐美观。但切的时候要注意去掉筋。"
+            }
+          ]
+        }
+      }
+    },
+    "minced_pork": {
+      "name": "猪肉末",
+      "icon": "🥩",
+      "amount": "50g猪肉末（可选）",
+      "options": {
+        "type": {
+          "label": "是否加肉",
+          "options": [
+            {
+              "id": "gbsjm_1",
+              "name": "加猪肉末50g",
+              "desc": "更香，经典做法",
+              "score": 10,
+              "detail": "猪肉末50g增加香味。选肥瘦相间的，炒出来更香。"
+            },
+            {
+              "id": "gbsjm_2",
+              "name": "不加肉末",
+              "desc": "素菜版",
+              "score": 7,
+              "detail": "不加肉末也好吃，更清爽。适合素食者。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理四季豆",
+      "description": "四季豆要去筋，约3分钟",
+      "options": [
+        {
+          "id": "gbsj_p1",
+          "name": "掰段去筋",
+          "desc": "经典处理",
+          "tip": "四季豆两侧的筋一定要去掉，否则口感差。掰成5cm段，从两端向中间掰，筋会自然撕下来。",
+          "params": {
+            "method": "去筋"
+          }
+        },
+        {
+          "id": "gbsj_p2",
+          "name": "洗净直接用",
+          "desc": "省事",
+          "tip": "不去筋口感会差。但如果不介意可以省略。",
+          "params": {
+            "method": "不去筋"
+          }
+        }
+      ]
+    },
+    "fry": {
+      "name": "煸炒四季豆",
+      "description": "干煸至表皮起皱，约5分钟",
+      "options": [
+        {
+          "id": "gbsj_f1",
+          "name": "少油中火煸至表皮起皱(5分钟)",
+          "desc": "经典做法",
+          "tip": "锅里放1汤匙油（15ml），中火（约160度）煸5分钟至表皮起皱发焦。煸炒时不要频繁翻动，让四季豆充分接触锅底。",
+          "params": {
+            "method": "少油煸",
+            "time": "5分钟",
+            "temp": "160度",
+            "oil": "1汤匙(15ml)"
+          }
+        },
+        {
+          "id": "gbsj_f2",
+          "name": "多油炸至虎皮状(3分钟)",
+          "desc": "更香",
+          "tip": "油温180度炸3分钟至表皮起皱。油炸更快但更油腻。炸好后捞出沥油。",
+          "params": {
+            "method": "油炸",
+            "time": "3分钟",
+            "temp": "180度"
+          }
+        }
+      ]
+    },
+    "stir_fry": {
+      "name": "炒肉末",
+      "description": "肉末增加香味",
+      "options": [
+        {
+          "id": "gbsj_s1",
+          "name": "中火炒肉末50g至出油(2分钟)",
+          "desc": "经典做法",
+          "tip": "中火（约160度）炒猪肉末50g至出油变色。肉末要炒散炒香。",
+          "params": {
+            "method": "炒肉末",
+            "time": "2分钟",
+            "temp": "160度",
+            "amount": "猪肉末50g"
+          }
+        },
+        {
+          "id": "gbsj_s2",
+          "name": "不加肉末直接调味",
+          "desc": "素菜版",
+          "tip": "不加肉末也可以。直接在煸好的四季豆里加调料。",
+          "params": {
+            "method": "无肉末"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "豆豉和干辣椒是灵魂",
+      "options": [
+        {
+          "id": "gbsj_t1",
+          "name": "豆豉1勺+干辣椒5个+蒜末10g",
+          "desc": "经典调味",
+          "tip": "豆豉1勺（15g）碾碎+干辣椒5个剪段+蒜末10g。豆豉要碾碎才入味。干辣椒和蒜末一起炒香。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "豆豉1勺(15g)",
+              "干辣椒5个",
+              "蒜末10g"
+            ]
+          }
+        },
+        {
+          "id": "gbsj_t2",
+          "name": "只用盐1\/2茶匙和蒜末10g",
+          "desc": "清淡版",
+          "tip": "盐1\/2茶匙+蒜末10g。清淡版也很好吃，四季豆的原味更突出。",
+          "params": {
+            "style": "清淡",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "蒜末10g"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "翻炒均匀出锅",
+      "options": [
+        {
+          "id": "gbsj_f1",
+          "name": "翻炒均匀出锅(30秒)",
+          "desc": "经典做法",
+          "tip": "不要炒太久，四季豆要保持脆嫩。翻炒30秒至调料均匀即可出锅。",
+          "params": {
+            "method": "翻炒出锅",
+            "time": "30秒"
+          }
+        },
+        {
+          "id": "gbsj_f2",
+          "name": "撒白芝麻10g出锅",
+          "desc": "更香",
+          "tip": "白芝麻10g先干锅炒香（小火炒1分钟），出锅前撒在四季豆上。",
+          "params": {
+            "method": "撒芝麻出锅",
+            "ingredients": [
+              "白芝麻10g"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 25,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "beans": {
+        "prep": "gbsj_1"
+      },
+      "minced_pork": {
+        "type": "gbsjm_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "gbsj_p1",
+      "fry": "gbsj_f1",
+      "stir_fry": "gbsj_s1",
+      "seasoning": "gbsj_t1",
+      "finish": "gbsj_f1"
+    },
+    "optimal_time": 12,
+    "tips": {
+      "perfect": "完美的干煸四季豆！外焦里嫩，咸香下饭。四季豆300g掰段去筋，中火煸5分钟至表皮起皱，豆豉1勺+干辣椒5个+蒜末10g。",
+      "good": "不错！煸炒得很到位，四季豆外焦里嫩。",
+      "average": "还可以，四季豆要煸到表皮起皱才香。",
+      "poose": "多练几次，煸炒是关键。中火煸5分钟至表皮起皱。"
+    }
+  }
+}

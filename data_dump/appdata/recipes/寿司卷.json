@@ -1,0 +1,238 @@
+{
+  "dish": "寿司卷",
+  "cuisine": "日料",
+  "category": "japanese",
+  "difficulty": 2,
+  "cook_time": 30,
+  "servings": "2人份",
+  "calories": "约400大卡\/份",
+  "ingredients": {
+    "rice": {
+      "name": "寿司米",
+      "icon": "🍚",
+      "amount": "2杯米（约400g生米）",
+      "options": {
+        "type": {
+          "label": "米的选择",
+          "options": [
+            {
+              "id": "ss_1",
+              "name": "日本珍珠米",
+              "desc": "2杯约400g，粘性好，最正宗",
+              "score": 10,
+              "detail": "日本珍珠米粘性好，做寿司最正宗。2杯米煮熟后约600g，够做2-3卷。"
+            },
+            {
+              "id": "ss_2",
+              "name": "东北大米",
+              "desc": "2杯约400g，可以替代",
+              "score": 7,
+              "detail": "东北大米粘性也不错，可以替代日本珍珠米。但口感稍有不同。"
+            }
+          ]
+        }
+      }
+    },
+    "filling": {
+      "name": "馅料",
+      "icon": "🍣",
+      "amount": "三文鱼100g+牛油果1个+黄瓜1根",
+      "options": {
+        "type": {
+          "label": "馅料搭配",
+          "options": [
+            {
+              "id": "ssf_1",
+              "name": "三文鱼100g+牛油果1个+黄瓜1根",
+              "desc": "经典搭配",
+              "score": 10,
+              "detail": "三文鱼100g切条（1cm宽）+牛油果1个切条+黄瓜1根切条。三种食材颜色搭配好看，口感丰富。"
+            },
+            {
+              "id": "ssf_2",
+              "name": "金枪鱼罐头1罐+黄瓜1根",
+              "desc": "清爽搭配",
+              "score": 8,
+              "detail": "金枪鱼罐头1罐（约100g）沥干+黄瓜1根切条。金枪鱼罐头方便，口感清爽。"
+            },
+            {
+              "id": "ssf_3",
+              "name": "肉松50g+黄瓜1根+胡萝卜1根",
+              "desc": "儿童版",
+              "score": 7,
+              "detail": "肉松50g+黄瓜1根切条+胡萝卜1根切丝。不腥不辣，适合小孩。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "cook_rice": {
+      "name": "煮寿司饭",
+      "description": "寿司饭要加醋调味，约20分钟",
+      "options": [
+        {
+          "id": "ss_c1",
+          "name": "米饭煮好后加寿司醋(醋3:糖2:盐1)拌匀",
+          "desc": "经典做法",
+          "tip": "2杯米煮熟后趁热加入寿司醋（醋3勺+糖2勺+盐半茶匙，提前调好）。用饭勺切拌（不要搅拌），让醋均匀分布。放凉至手温再用。",
+          "params": {
+            "method": "加醋拌匀",
+            "ingredients": [
+              "醋3勺(45ml)",
+              "糖2勺(30g)",
+              "盐半茶匙"
+            ]
+          }
+        },
+        {
+          "id": "ss_c2",
+          "name": "买现成的寿司醋",
+          "desc": "省事",
+          "tip": "超市有卖现成的寿司醋，约200ml一瓶。用3勺即可。方便但味道稍差。",
+          "params": {
+            "method": "现成醋",
+            "ingredients": [
+              "寿司醋3勺(45ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "prep": {
+      "name": "准备馅料",
+      "description": "馅料要切好备用",
+      "options": [
+        {
+          "id": "ss_p1",
+          "name": "鱼生切1cm条，蔬菜切1cm条",
+          "desc": "标准处理",
+          "tip": "三文鱼切1cm宽条。黄瓜去籽切1cm条。牛油果去核切1cm条。所有食材要沥干水分。",
+          "params": {
+            "method": "切条备用"
+          }
+        },
+        {
+          "id": "ss_p2",
+          "name": "所有食材切条",
+          "desc": "家常做法",
+          "tip": "切条要均匀，约1cm宽。不均匀会导致卷出来粗细不一。",
+          "params": {
+            "method": "切条"
+          }
+        }
+      ]
+    },
+    "roll": {
+      "name": "卷寿司",
+      "description": "卷法是关键，约10分钟",
+      "options": [
+        {
+          "id": "ss_r1",
+          "name": "竹帘+海苔铺饭+放馅料卷紧",
+          "desc": "经典做法",
+          "tip": "竹帘上铺海苔（光滑面朝下），均匀铺一层米饭（约1cm厚，留2cm边不铺）。中间放馅料，用竹帘卷紧。卷的时候要紧，松了会散。",
+          "params": {
+            "method": "竹帘卷"
+          }
+        },
+        {
+          "id": "ss_r2",
+          "name": "手卷",
+          "desc": "简单版",
+          "tip": "手卷更简单，适合新手。海苔摊在手上，铺米饭和馅料，卷起来即可。",
+          "params": {
+            "method": "手卷"
+          }
+        }
+      ]
+    },
+    "cut": {
+      "name": "切寿司",
+      "description": "切法影响美观",
+      "options": [
+        {
+          "id": "ss_ct1",
+          "name": "刀沾水切成8段",
+          "desc": "经典做法",
+          "tip": "刀要沾水才不会粘饭。每切一刀都要擦干净再沾水。一刀切到底，不要来回拉锯。一卷切8段。",
+          "params": {
+            "method": "沾水切",
+            "segments": "8段"
+          }
+        },
+        {
+          "id": "ss_ct2",
+          "name": "直接切",
+          "desc": "家常做法",
+          "tip": "直接切可能会散。刀沾水是关键。",
+          "params": {
+            "method": "直接切"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "装盘配调料",
+      "options": [
+        {
+          "id": "ss_f1",
+          "name": "配酱油+芥末+姜片",
+          "desc": "经典吃法",
+          "tip": "酱油+芥末（芥末不要蘸太多，会冲鼻）+腌姜片（解腻）。姜片是吃寿司时清口用的。",
+          "params": {
+            "method": "配调料",
+            "ingredients": [
+              "酱油适量",
+              "芥末少许",
+              "姜片适量"
+            ]
+          }
+        },
+        {
+          "id": "ss_f2",
+          "name": "直接吃",
+          "desc": "原味",
+          "tip": "新鲜寿司原味就很好。鱼要新鲜，米饭温度适中。",
+          "params": {
+            "method": "原味"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 15,
+    "heat_control": 10,
+    "seasoning": 25,
+    "step_order": 25,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "rice": {
+        "type": "ss_1"
+      },
+      "filling": {
+        "type": "ssf_1"
+      }
+    },
+    "cooking_flow": {
+      "cook_rice": "ss_c1",
+      "prep": "ss_p1",
+      "roll": "ss_r1",
+      "cut": "ss_ct1",
+      "finish": "ss_f1"
+    },
+    "optimal_time": 30,
+    "tips": {
+      "perfect": "完美的寿司卷！米饭软糯，馅料新鲜。日本珍珠米2杯煮熟加寿司醋（醋3:糖2:盐0.5），竹帘卷紧切8段。",
+      "good": "不错！寿司卷卷得很紧。米饭调味刚好。",
+      "average": "还可以，饭不要铺太厚，卷的时候要卷紧。",
+      "poose": "多练几次，卷法是关键。竹帘卷紧是寿司不散的秘诀。"
+    }
+  }
+}

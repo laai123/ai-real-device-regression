@@ -1,0 +1,215 @@
+{
+  "dish": "凯撒沙拉",
+  "cuisine": "西餐",
+  "category": "western",
+  "difficulty": 1,
+  "cook_time": 10,
+  "servings": "1-2人份",
+  "calories": "约300大卡\/份",
+  "ingredients": {
+    "lettuce": {
+      "name": "罗马生菜",
+      "icon": "🥬",
+      "amount": "1颗罗马生菜（约200g）",
+      "options": {
+        "type": {
+          "label": "生菜选择",
+          "options": [
+            {
+              "id": "ks_1",
+              "name": "罗马生菜",
+              "desc": "200g，经典选择",
+              "score": 10,
+              "detail": "罗马生菜是凯撒沙拉的经典选择，叶片脆嫩，口感好。1颗约200g，够1-2人。"
+            },
+            {
+              "id": "ks_2",
+              "name": "混合生菜",
+              "desc": "200g，口感更丰富",
+              "score": 8,
+              "detail": "混合生菜（罗马+芝麻菜+红叶生菜）口感更丰富。超市有卖袋装混合生菜。"
+            }
+          ]
+        }
+      }
+    },
+    "dressing": {
+      "name": "凯撒酱",
+      "icon": "🫙",
+      "amount": "经典凯撒酱约100ml",
+      "options": {
+        "type": {
+          "label": "酱汁选择",
+          "options": [
+            {
+              "id": "ksd_1",
+              "name": "自制凯撒酱",
+              "desc": "蛋黄+橄榄油+柠檬汁+蒜+凤尾鱼",
+              "score": 10,
+              "detail": "蛋黄1个+橄榄油100ml+柠檬汁1勺+大蒜1瓣切末+凤尾鱼1片碾碎+帕玛森芝士10g。自制的比买的好吃很多。"
+            },
+            {
+              "id": "ksd_2",
+              "name": "买现成的凯撒酱",
+              "desc": "省事",
+              "score": 7,
+              "detail": "超市有卖现成的凯撒酱，约150ml一瓶。方便但味道不如自制的。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理食材",
+      "description": "生菜洗净撕成小块，约3分钟",
+      "options": [
+        {
+          "id": "ks_p1",
+          "name": "生菜洗净手撕成小块",
+          "desc": "经典做法",
+          "tip": "手撕比刀切口感更好。撕成3-4cm小块，沥干水分。用沙拉甩干器甩干最好。",
+          "params": {
+            "method": "手撕"
+          }
+        }
+      ]
+    },
+    "crouton": {
+      "name": "面包丁",
+      "description": "烤面包丁增加口感，约5分钟",
+      "options": [
+        {
+          "id": "ks_c1",
+          "name": "面包2片切1cm丁+黄油10g煎至金黄(3分钟)",
+          "desc": "经典做法",
+          "tip": "吐司面包2片切1cm方块。锅里放黄油10g融化，下面包丁中火煎3分钟至金黄酥脆。",
+          "params": {
+            "method": "黄油煎",
+            "time": "3分钟",
+            "ingredients": [
+              "吐司面包2片",
+              "黄油10g"
+            ]
+          }
+        },
+        {
+          "id": "ks_c2",
+          "name": "用现成的面包丁",
+          "desc": "省事",
+          "tip": "超市有卖现成的面包丁（Croutons），约100g一袋。直接用即可。",
+          "params": {
+            "method": "现成面包丁"
+          }
+        }
+      ]
+    },
+    "sauce": {
+      "name": "调凯撒酱",
+      "description": "凯撒酱是灵魂，约5分钟",
+      "options": [
+        {
+          "id": "ks_s1",
+          "name": "蛋黄1个+橄榄油100ml+柠檬汁1勺+蒜1瓣+凤尾鱼1片+帕玛森10g",
+          "desc": "经典凯撒酱",
+          "tip": "蛋黄1个打散，慢慢加入橄榄油100ml（边加边搅拌至乳化）。加柠檬汁1勺（15ml）+蒜1瓣切末+凤尾鱼1片碾碎+帕玛森芝士10g刨碎。凤尾鱼是凯撒酱的秘密武器。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "蛋黄1个",
+              "橄榄油100ml",
+              "柠檬汁1勺(15ml)",
+              "大蒜1瓣",
+              "凤尾鱼1片",
+              "帕玛森芝士10g"
+            ]
+          }
+        },
+        {
+          "id": "ks_s2",
+          "name": "买现成的凯撒酱100ml",
+          "desc": "省事",
+          "tip": "超市有卖现成的凯撒酱，约150ml一瓶。用100ml即可。",
+          "params": {
+            "style": "现成酱",
+            "ingredients": [
+              "凯撒酱100ml"
+            ]
+          }
+        }
+      ]
+    },
+    "assemble": {
+      "name": "拌匀",
+      "description": "所有食材拌匀",
+      "options": [
+        {
+          "id": "ks_a1",
+          "name": "生菜+面包丁20g+帕玛森芝士10g+酱汁拌匀",
+          "desc": "经典做法",
+          "tip": "生菜+面包丁20g+帕玛森芝士10g+凯撒酱100ml。酱汁不要放太多，拌匀即可。",
+          "params": {
+            "method": "拌匀",
+            "ingredients": [
+              "面包丁20g",
+              "帕玛森芝士10g",
+              "凯撒酱100ml"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "装盘即可",
+      "options": [
+        {
+          "id": "ks_f1",
+          "name": "撒帕玛森芝士碎10g+现磨黑胡椒",
+          "desc": "经典装盘",
+          "tip": "帕玛森芝士碎10g现刨撒在沙拉上。现刨的比预包装的香很多。再撒少许黑胡椒。",
+          "params": {
+            "method": "撒芝士",
+            "ingredients": [
+              "帕玛森芝士碎10g",
+              "黑胡椒少许"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 5,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 25,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "lettuce": {
+        "type": "ks_1"
+      },
+      "dressing": {
+        "type": "ksd_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "ks_p1",
+      "crouton": "ks_c1",
+      "sauce": "ks_s1",
+      "assemble": "ks_a1",
+      "finish": "ks_f1"
+    },
+    "optimal_time": 10,
+    "tips": {
+      "perfect": "完美的凯撒沙拉！清爽开胃，酱汁浓郁。罗马生菜200g手撕，面包丁20g黄油煎至金黄，自制凯撒酱蛋黄+橄榄油+凤尾鱼。",
+      "good": "不错！凯撒酱调得很好。面包丁很酥脆。",
+      "average": "还可以，面包丁要煎脆。酱汁不要放太多。",
+      "poose": "多练几次，凯撒酱是灵魂。蛋黄+橄榄油慢慢乳化是关键。"
+    }
+  }
+}

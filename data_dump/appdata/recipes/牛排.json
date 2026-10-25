@@ -1,0 +1,224 @@
+{
+  "dish": "牛排",
+  "cuisine": "西餐",
+  "category": "western",
+  "difficulty": 2,
+  "cook_time": 15,
+  "servings": "1-2人份",
+  "calories": "约400大卡\/份",
+  "ingredients": {
+    "steak": {
+      "name": "牛排",
+      "icon": "🥩",
+      "amount": "1块（约250g，2cm厚）",
+      "options": {
+        "type": {
+          "label": "牛排选择",
+          "options": [
+            {
+              "id": "np_1",
+              "name": "西冷牛排",
+              "desc": "250g，有嚼劲，油花适中",
+              "score": 10,
+              "detail": "西冷牛排（Sirloin）是最经典的牛排部位，有嚼劲，油花适中。选2cm厚、约250g的。颜色鲜红、脂肪分布均匀的最好。"
+            },
+            {
+              "id": "np_2",
+              "name": "菲力牛排",
+              "desc": "200g，最嫩，脂肪少",
+              "score": 9,
+              "detail": "菲力（Filet）是牛里脊，最嫩但脂肪少。选2cm厚、约200g的。适合喜欢嫩肉的人。"
+            },
+            {
+              "id": "np_3",
+              "name": "肋眼牛排",
+              "desc": "280g，油花丰富，香气浓郁",
+              "score": 8,
+              "detail": "肋眼（Ribeye）油花最丰富，香气浓郁。选2.5cm厚、约280g的。脂肪多更香。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "回温和调味",
+      "description": "牛排要提前回温，这是煎好牛排的关键",
+      "options": [
+        {
+          "id": "np_p1",
+          "name": "提前30分钟从冰箱取出回温",
+          "desc": "标准做法",
+          "tip": "冷牛排下锅会导致外焦里生。提前30分钟从冰箱取出，回到室温再煎。用厨房纸擦干表面水分。",
+          "params": {
+            "method": "回温30分钟"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可，好牛排不需要太多调料",
+      "options": [
+        {
+          "id": "np_s1",
+          "name": "海盐1\/2茶匙+黑胡椒1\/4茶匙+橄榄油1茶匙",
+          "desc": "经典调味",
+          "tip": "海盐1\/2茶匙+黑胡椒1\/4茶匙（现磨更香）+橄榄油1茶匙抹匀。盐要在煎之前10分钟撒，让肉吸收。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "海盐1\/2茶匙",
+              "黑胡椒1\/4茶匙(现磨)",
+              "橄榄油1茶匙"
+            ]
+          }
+        },
+        {
+          "id": "np_s2",
+          "name": "只用海盐1\/2茶匙",
+          "desc": "最简单",
+          "tip": "好牛排只需要盐。海盐1\/2茶匙在煎之前10分钟撒。黑胡椒可以出锅后加。",
+          "params": {
+            "style": "极简",
+            "ingredients": [
+              "海盐1\/2茶匙"
+            ]
+          }
+        }
+      ]
+    },
+    "sear": {
+      "name": "煎牛排",
+      "description": "大火快煎锁住汁水，时间要精确",
+      "options": [
+        {
+          "id": "np_sr1",
+          "name": "大火每面煎2分钟（五分熟Medium Rare）",
+          "desc": "最受欢迎的熟度",
+          "tip": "锅烧到冒烟（约250度），不加油直接下牛排。每面煎2分钟，不要频繁翻动。煎好后内部温度约55度，中心呈粉红色。",
+          "params": {
+            "doneness": "五分熟(Medium Rare)",
+            "time": "每面2分钟",
+            "temp": "250度",
+            "internal_temp": "55度"
+          }
+        },
+        {
+          "id": "np_sr2",
+          "name": "大火每面煎1.5分钟（三分熟Rare）",
+          "desc": "喜欢生一点的",
+          "tip": "每面1.5分钟。中心呈红色，口感很嫩。内部温度约50度。适合喜欢生肉的人。",
+          "params": {
+            "doneness": "三分熟(Rare)",
+            "time": "每面1.5分钟",
+            "temp": "250度",
+            "internal_temp": "50度"
+          }
+        },
+        {
+          "id": "np_sr3",
+          "name": "大火每面煎3分钟（七分熟Medium）",
+          "desc": "喜欢熟一点的",
+          "tip": "每面3分钟。中心呈浅粉色，口感适中。内部温度约60度。",
+          "params": {
+            "doneness": "七分熟(Medium)",
+            "time": "每面3分钟",
+            "temp": "250度",
+            "internal_temp": "60度"
+          }
+        },
+        {
+          "id": "np_sr4",
+          "name": "大火每面煎4分钟（全熟Well Done）",
+          "desc": "全熟",
+          "tip": "每面4分钟。中心完全变色，口感偏硬。内部温度约70度。全熟牛排会比较硬。",
+          "params": {
+            "doneness": "全熟(Well Done)",
+            "time": "每面4分钟",
+            "temp": "250度",
+            "internal_temp": "70度"
+          }
+        }
+      ]
+    },
+    "rest": {
+      "name": "静置",
+      "description": "煎好后要静置，让肉汁回流",
+      "options": [
+        {
+          "id": "np_r1",
+          "name": "静置5分钟",
+          "desc": "标准做法",
+          "tip": "煎好后放在盘子里静置5分钟。静置让肉汁回流到肉的中心，切开不会流汁。用锡纸盖住保温。",
+          "params": {
+            "time": "5分钟"
+          }
+        },
+        {
+          "id": "np_r2",
+          "name": "不静置直接切",
+          "desc": "省事",
+          "tip": "不静置肉汁会流失到盘子里，肉会变干。强烈建议静置。",
+          "params": {
+            "time": "0"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "切片装盘配酱汁",
+      "options": [
+        {
+          "id": "np_f1",
+          "name": "切片配黑椒汁或红酒汁",
+          "desc": "经典吃法",
+          "tip": "逆纹切片（与纹理呈45度角），厚度约5mm。配黑椒汁（超市有现成的）或红酒汁。",
+          "params": {
+            "method": "配酱汁"
+          }
+        },
+        {
+          "id": "np_f2",
+          "name": "直接吃",
+          "desc": "原味",
+          "tip": "好牛排原味就很好吃。可以配海盐和现磨黑胡椒。",
+          "params": {
+            "method": "原味"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 30,
+    "seasoning": 20,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "steak": {
+        "type": "np_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "np_p1",
+      "seasoning": "np_s1",
+      "sear": "np_sr1",
+      "rest": "np_r1",
+      "finish": "np_f1"
+    },
+    "optimal_time": 15,
+    "tips": {
+      "perfect": "完美的牛排！外焦里嫩，五分熟刚好。西冷牛排250g回温30分钟，大火每面煎2分钟，静置5分钟。内部温度55度。",
+      "good": "不错！火候掌握得很好。回温很重要。",
+      "average": "还可以，回温是关键。冷牛排下锅会导致外焦里生。",
+      "poose": "多练几次，火候是关键。用厨房温度计测内部温度最准确。55度=五分熟。"
+    }
+  }
+}

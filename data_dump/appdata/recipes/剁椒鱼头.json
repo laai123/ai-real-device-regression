@@ -1,0 +1,231 @@
+{
+  "dish": "剁椒鱼头",
+  "cuisine": "湘菜",
+  "category": "chinese",
+  "difficulty": 2,
+  "cook_time": 20,
+  "servings": "2-3人份",
+  "calories": "约250大卡\/份",
+  "ingredients": {
+    "fish": {
+      "name": "鲢鱼头",
+      "icon": "🐟",
+      "amount": "1个大鱼头（约800g）",
+      "options": {
+        "size": {
+          "label": "大小",
+          "options": [
+            {
+              "id": "djyt_1",
+              "name": "大鱼头(800g+)",
+              "desc": "肉多够吃，宴客首选",
+              "score": 10,
+              "detail": "800g以上的大鱼头肉多，蒸出来更壮观。选眼睛明亮、鳃红色的新鲜鱼头。"
+            },
+            {
+              "id": "djyt_2",
+              "name": "小鱼头(500g)",
+              "desc": "1人食，简单方便",
+              "score": 7,
+              "detail": "500g的小鱼头适合1人食。蒸的时间短（10分钟），但肉少。"
+            }
+          ]
+        }
+      }
+    },
+    "duojiao": {
+      "name": "剁椒",
+      "icon": "🌶️",
+      "amount": "100g剁椒（约半瓶）",
+      "options": {
+        "type": {
+          "label": "剁椒选择",
+          "options": [
+            {
+              "id": "dj_1",
+              "name": "湖南剁椒",
+              "desc": "100g，酸辣正宗",
+              "score": 10,
+              "detail": "湖南剁椒是最正宗的选择，酸辣适中。超市有卖瓶装的，约100g。"
+            },
+            {
+              "id": "dj_2",
+              "name": "四川泡椒",
+              "desc": "100g，更辣",
+              "score": 8,
+              "detail": "四川泡椒比湖南剁椒更辣，酸味更重。适合能吃辣的人。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理鱼头",
+      "description": "鱼头要对半劈开摊平，约5分钟",
+      "options": [
+        {
+          "id": "djyt_p1",
+          "name": "对半劈开摊平",
+          "desc": "经典做法",
+          "tip": "从鱼头下巴处对半劈开，摊平放在盘子里。劈开后摊平更容易蒸熟，受热均匀。鱼肚子里的黑膜一定要去掉。",
+          "params": {
+            "method": "劈开摊平"
+          }
+        },
+        {
+          "id": "djyt_p2",
+          "name": "不劈开整只蒸",
+          "desc": "保持完整",
+          "tip": "整只蒸出来更好看，但需要加长蒸的时间（多蒸3分钟）。鱼肚子里塞姜片去腥。",
+          "params": {
+            "method": "整只蒸"
+          }
+        }
+      ]
+    },
+    "marinate": {
+      "name": "腌制去腥",
+      "description": "料酒姜片去腥，约10分钟",
+      "options": [
+        {
+          "id": "djyt_m1",
+          "name": "料酒2勺+姜片5片腌10分钟",
+          "desc": "经典去腥",
+          "tip": "料酒2勺（30ml）+姜片5片。腌好后把姜片放在鱼头上，倒掉腌汁。",
+          "params": {
+            "method": "姜葱料酒",
+            "time": "10分钟",
+            "ingredients": [
+              "料酒2勺(30ml)",
+              "姜片5片"
+            ]
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "铺剁椒",
+      "description": "剁椒是灵魂，要铺均匀",
+      "options": [
+        {
+          "id": "djyt_s1",
+          "name": "剁椒100g+蒜末15g+豆豉1勺铺满鱼头",
+          "desc": "经典做法",
+          "tip": "剁椒100g铺满鱼头表面，蒜末15g撒在剁椒上，豆豉1勺（15g）点缀。剁椒要铺均匀，厚度约1cm。",
+          "params": {
+            "method": "经典剁椒",
+            "ingredients": [
+              "剁椒100g",
+              "蒜末15g",
+              "豆豉1勺(15g)"
+            ]
+          }
+        },
+        {
+          "id": "djyt_s2",
+          "name": "只铺剁椒100g",
+          "desc": "简单版",
+          "tip": "只铺剁椒100g。剁椒本身已经有味道了，不加蒜末也可以。",
+          "params": {
+            "method": "简单剁椒",
+            "ingredients": [
+              "剁椒100g"
+            ]
+          }
+        }
+      ]
+    },
+    "steam": {
+      "name": "蒸制",
+      "description": "大火蒸制，时间要精确",
+      "options": [
+        {
+          "id": "djyt_st1",
+          "name": "水开后大火蒸12分钟",
+          "desc": "标准时间",
+          "tip": "水开后再放鱼头，大火蒸12分钟。800g鱼头蒸12分钟刚好。蒸好后倒掉盘里的蒸鱼水。",
+          "params": {
+            "time": "12分钟",
+            "temp": "大火"
+          }
+        },
+        {
+          "id": "djyt_st2",
+          "name": "蒸10分钟",
+          "desc": "鱼头小时用",
+          "tip": "500g鱼头蒸10分钟即可。蒸太久鱼肉会变老。",
+          "params": {
+            "time": "10分钟",
+            "temp": "大火"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "浇热油激发香味",
+      "options": [
+        {
+          "id": "djyt_f1",
+          "name": "撒葱花10g+浇热油2汤匙",
+          "desc": "经典做法",
+          "tip": "葱花10g铺在剁椒上，油2汤匙（30ml）烧到冒烟（250度）浇上去。会听到滋滋响，香味四溢。",
+          "params": {
+            "method": "浇热油",
+            "ingredients": [
+              "葱花10g"
+            ],
+            "oil": "2汤匙(30ml)",
+            "temp": "250度"
+          }
+        },
+        {
+          "id": "djyt_f2",
+          "name": "只淋生抽1勺",
+          "desc": "清淡版",
+          "tip": "少油更健康。蒸鱼豉油1勺（15ml）淋上即可。",
+          "params": {
+            "method": "淋生抽",
+            "ingredients": [
+              "生抽1勺(15ml)"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 20,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "fish": {
+        "size": "djyt_1"
+      },
+      "duojiao": {
+        "type": "dj_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "djyt_p1",
+      "marinate": "djyt_m1",
+      "seasoning": "djyt_s1",
+      "steam": "djyt_st1",
+      "finish": "djyt_f1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的剁椒鱼头！鲜辣开胃，鱼肉嫩滑。大鱼头800g劈开摊平，剁椒100g铺满，水开后大火蒸12分钟。",
+      "good": "不错！剁椒铺得很均匀。蒸的时间刚好。",
+      "average": "还可以，蒸的时间是关键。800g蒸12分钟。",
+      "poose": "多练几次，剁椒要铺均匀。鱼头劈开摊平更容易蒸熟。"
+    }
+  }
+}

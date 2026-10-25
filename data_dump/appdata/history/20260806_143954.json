@@ -1,0 +1,35 @@
+{
+  "record_id": 1785998394508,
+  "user_id": "test",
+  "dish": "辣椒炒肉",
+  "total_time": 1,
+  "score": {
+    "total": 23,
+    "breakdown": {
+      "knife_skills": 2,
+      "heat_control": 0,
+      "seasoning": 0,
+      "step_order": 3,
+      "time_efficiency": 10,
+      "creativity": 8
+    },
+    "feedback": "需要加油！多看看标准做法，下次会更好。重点练习火候控制和调味时机。\n\n💡 火候控制可以改进，注意不同步骤的火力大小。\n💡 调味方面可以尝试更正宗的搭配。\n💡 食材处理可以更精细，注意切法和厚度。\n"
+  },
+  "ingredient_choices": [
+    "ingredient_pork_cut:pork_cut_1",
+    "ingredient_pork_slice:pork_slice_2",
+    "ingredient_pork_thickness:pork_thick_3",
+    "ingredient_chili_type:chili_type_3",
+    "ingredient_chili_cut:chili_cut_2",
+    "ingredient_garlic_prep:garlic_prep_2"
+  ],
+  "selected_options": [
+    "marinate:marinate_2",
+    "preheat:preheat_3",
+    "cook_chili:chili_3",
+    "cook_pork:pork_2",
+    "seasoning:season_3",
+    "finish:finish_3"
+  ],
+  "created_at": "2026-08-06 14:39:54"
+}

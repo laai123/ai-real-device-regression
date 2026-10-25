@@ -1,0 +1,254 @@
+{
+  "dish": "辣子鸡",
+  "cuisine": "川菜",
+  "category": "chinese",
+  "difficulty": 2,
+  "cook_time": 20,
+  "servings": "2-3人份",
+  "calories": "约420大卡\/份",
+  "ingredients": {
+    "chicken": {
+      "name": "鸡腿肉",
+      "icon": "🍗",
+      "amount": "400g鸡腿肉（约2个鸡腿）",
+      "options": {
+        "cut": {
+          "label": "切法",
+          "options": [
+            {
+              "id": "lzj_1",
+              "name": "切1cm小丁",
+              "desc": "400g约160粒，经典做法",
+              "score": 10,
+              "detail": "1cm小丁是辣子鸡的经典大小。先切1cm条，再切1cm丁。大小要均匀，受热才均匀。"
+            },
+            {
+              "id": "lzj_2",
+              "name": "切2cm大块",
+              "desc": "400g约80块，口感饱满",
+              "score": 7,
+              "detail": "2cm大块口感更饱满，但炸的时间要加长1分钟。"
+            }
+          ]
+        }
+      }
+    },
+    "chili": {
+      "name": "干辣椒",
+      "icon": "🌶️",
+      "amount": "100g干辣椒（约30个）+花椒2茶匙",
+      "options": {
+        "type": {
+          "label": "辣椒选择",
+          "options": [
+            {
+              "id": "lzjc_1",
+              "name": "干辣椒100g+花椒2茶匙",
+              "desc": "经典搭配，麻辣够劲",
+              "score": 10,
+              "detail": "干辣椒100g（约30个）剪段去籽+花椒2茶匙（约4g）。干辣椒要剪成2cm段，去掉籽可以降低辣度。"
+            },
+            {
+              "id": "lzjc_2",
+              "name": "干辣椒150g+花椒3茶匙",
+              "desc": "重麻辣版本",
+              "score": 8,
+              "detail": "干辣椒150g+花椒3茶匙。更辣更麻，适合能吃辣的人。"
+            },
+            {
+              "id": "lzjc_3",
+              "name": "干辣椒50g+花椒1茶匙",
+              "desc": "微辣版",
+              "score": 7,
+              "detail": "干辣椒50g+花椒1茶匙。辣度适中，适合不太能吃辣的人。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "marinate": {
+      "name": "腌制鸡丁",
+      "description": "腌制让鸡丁更入味，约10分钟",
+      "options": [
+        {
+          "id": "lzj_m1",
+          "name": "料酒1勺+生抽1勺+淀粉1勺腌10分钟",
+          "desc": "经典腌制",
+          "tip": "料酒1勺（15ml）+生抽1勺（15ml）+淀粉1勺（10g）抓匀腌10分钟。加少许油（1茶匙）可防止粘连。",
+          "params": {
+            "method": "经典",
+            "time": "10分钟",
+            "ingredients": [
+              "料酒1勺",
+              "生抽1勺",
+              "淀粉1勺",
+              "油1茶匙"
+            ]
+          }
+        },
+        {
+          "id": "lzj_m2",
+          "name": "不腌制直接炸",
+          "desc": "省时间",
+          "tip": "不腌制的话鸡丁入味差，口感也差。建议至少用料酒和淀粉简单腌5分钟。",
+          "params": {
+            "method": "不腌",
+            "time": "0"
+          }
+        }
+      ]
+    },
+    "fry": {
+      "name": "炸鸡丁",
+      "description": "炸至金黄酥脆，约5分钟",
+      "options": [
+        {
+          "id": "lzj_f1",
+          "name": "中火炸至金黄(5分钟)",
+          "desc": "外酥里嫩",
+          "tip": "油温五成热（约150度）下锅，炸5分钟至金黄浮起。炸好后捞出沥油。油要没过鸡丁。",
+          "params": {
+            "method": "中火炸",
+            "time": "5分钟",
+            "temp": "150度"
+          }
+        },
+        {
+          "id": "lzj_f2",
+          "name": "大火快炸(3分钟)",
+          "desc": "省时间",
+          "tip": "大火容易外面焦里面生。油温要够高（180度），快速炸3分钟。",
+          "params": {
+            "method": "大火炸",
+            "time": "3分钟",
+            "temp": "180度"
+          }
+        }
+      ]
+    },
+    "stir_fry": {
+      "name": "炒辣椒",
+      "description": "干辣椒和花椒是灵魂",
+      "options": [
+        {
+          "id": "lzj_s1",
+          "name": "小火炒香干辣椒100g和花椒2茶匙(2分钟)",
+          "desc": "经典做法",
+          "tip": "干辣椒100g剪段+花椒2茶匙。小火（约120度）炒2分钟至出香味。干辣椒变色后立即下鸡丁翻炒。",
+          "params": {
+            "method": "小火炒香",
+            "time": "2分钟",
+            "temp": "120度"
+          }
+        },
+        {
+          "id": "lzj_s2",
+          "name": "加郫县豆瓣酱1勺一起炒",
+          "desc": "更浓郁",
+          "tip": "郫县豆瓣酱1勺（15g）和辣椒花椒一起小火炒1分钟。豆瓣酱要炒出红油。",
+          "params": {
+            "method": "加豆瓣酱",
+            "time": "2分钟",
+            "ingredients": [
+              "郫县豆瓣酱1勺(15g)"
+            ]
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "lzj_t1",
+          "name": "盐1\/2茶匙+糖1\/4茶匙+生抽1勺",
+          "desc": "经典调味",
+          "tip": "盐1\/2茶匙+糖1\/4茶匙（提鲜）+生抽1勺（15ml）。糖不要放太多，吃不出甜味即可。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "盐1\/2茶匙",
+              "糖1\/4茶匙",
+              "生抽1勺(15ml)"
+            ]
+          }
+        },
+        {
+          "id": "lzj_t2",
+          "name": "只用盐1\/2茶匙",
+          "desc": "最简单",
+          "tip": "干辣椒和花椒本身已经有味道了。盐1\/2茶匙即可。",
+          "params": {
+            "style": "简单",
+            "ingredients": [
+              "盐1\/2茶匙"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "鸡丁回锅翻炒",
+      "options": [
+        {
+          "id": "lzj_fi1",
+          "name": "鸡丁回锅翻炒均匀出锅(30秒)",
+          "desc": "经典做法",
+          "tip": "鸡丁回锅后不要炒太久（30秒），保持酥脆。翻炒均匀即可出锅。",
+          "params": {
+            "method": "回锅出锅",
+            "time": "30秒"
+          }
+        },
+        {
+          "id": "lzj_fi2",
+          "name": "撒白芝麻10g出锅",
+          "desc": "更香",
+          "tip": "白芝麻10g先干锅炒香（小火炒1分钟），出锅前撒在鸡丁上。",
+          "params": {
+            "method": "撒芝麻出锅",
+            "ingredients": [
+              "白芝麻10g"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 25,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "chicken": {
+        "cut": "lzj_1"
+      },
+      "chili": {
+        "type": "lzjc_1"
+      }
+    },
+    "cooking_flow": {
+      "marinate": "lzj_m1",
+      "fry": "lzj_f1",
+      "stir_fry": "lzj_s1",
+      "seasoning": "lzj_t1",
+      "finish": "lzj_fi1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的辣子鸡！外酥里嫩，麻辣够味。鸡腿肉400g切1cm丁上浆10分钟，中火炸5分钟至金黄，干辣椒100g+花椒2茶匙小火炒2分钟。",
+      "good": "不错！辣椒炒得很香，鸡丁炸得酥脆。",
+      "average": "还可以，炸鸡丁要炸透，辣椒要炒香。",
+      "poose": "多练几次，火候是关键。干辣椒100g+花椒2茶匙是灵魂。"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "dish": "烤鸭",
+  "cuisine": "粤菜",
+  "category": "chinese",
+  "difficulty": 3,
+  "cook_time": 90,
+  "servings": "3-4人份",
+  "calories": "约500大卡\/份",
+  "ingredients": {
+    "duck": {
+      "name": "整鸭",
+      "icon": "🦆",
+      "amount": "1只填鸭（约2.5kg）",
+      "options": {
+        "type": {
+          "label": "鸭子选择",
+          "options": [
+            {
+              "id": "ky_1",
+              "name": "填鸭",
+              "desc": "2.5kg，肉质肥美，经典选择",
+              "score": 10,
+              "detail": "填鸭是烤鸭的最佳选择，皮下脂肪丰富，烤出来皮脆肉嫩。选2.5kg左右的。"
+            },
+            {
+              "id": "ky_2",
+              "name": "普通鸭",
+              "desc": "2kg，经济实惠",
+              "score": 7,
+              "detail": "普通鸭比填鸭便宜，但皮下脂肪少，烤出来皮不够脆。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理鸭子",
+      "description": "鸭子要烫皮风干，约5分钟处理+4小时风干",
+      "options": [
+        {
+          "id": "ky_p1",
+          "name": "清洗后用开水烫皮+麦芽糖水刷皮+风干4小时",
+          "desc": "经典做法",
+          "tip": "鸭子清洗干净。用开水烫皮（浇在鸭皮上3遍）。麦芽糖2勺+白醋1勺+水3勺调成糖水，刷在鸭皮上。挂在通风处风干4小时（或冰箱过夜）。风干越久皮越脆。",
+          "params": {
+            "method": "烫皮风干",
+            "time": "风干4小时",
+            "ingredients": [
+              "麦芽糖2勺",
+              "白醋1勺",
+              "水3勺"
+            ]
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "腌制",
+      "description": "腹腔内抹料，约5分钟",
+      "options": [
+        {
+          "id": "ky_s1",
+          "name": "五香粉1勺+盐2勺+料酒2勺抹腹腔",
+          "desc": "经典腌制",
+          "tip": "五香粉1勺（5g）+盐2勺（30g）+料酒2勺（30ml）。均匀抹在鸭腹腔内壁。腌制2小时更入味。",
+          "params": {
+            "method": "五香腌制",
+            "time": "2小时",
+            "ingredients": [
+              "五香粉1勺(5g)",
+              "盐2勺(30g)",
+              "料酒2勺(30ml)"
+            ]
+          }
+        }
+      ]
+    },
+    "roast": {
+      "name": "烤制",
+      "description": "烤箱烤制是关键",
+      "options": [
+        {
+          "id": "ky_r1",
+          "name": "200度烤40分钟，翻面再烤20分钟",
+          "desc": "经典做法",
+          "tip": "烤箱提前预热200度。鸭子胸朝上放入烤箱烤40分钟。翻面（胸朝下）再烤20分钟。烤好后静置10分钟再切。总共约70分钟。",
+          "params": {
+            "method": "烤箱烤",
+            "time": "60分钟",
+            "temp": "200度"
+          }
+        },
+        {
+          "id": "ky_r2",
+          "name": "空气炸锅180度30分钟，翻面再20分钟",
+          "desc": "省油版",
+          "tip": "空气炸锅180度烤30分钟，翻面再烤20分钟。不需要额外加油，鸭子自身油脂会渗出。",
+          "params": {
+            "method": "空气炸",
+            "time": "50分钟",
+            "temp": "180度"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "片鸭",
+      "description": "片鸭是技术活，约10分钟",
+      "options": [
+        {
+          "id": "ky_f1",
+          "name": "片成薄片配荷饼+甜面酱+葱丝",
+          "desc": "经典吃法",
+          "tip": "烤好后静置10分钟。片鸭要趁热，皮肉相连最好吃。片成约30片。配荷饼（或春饼）+甜面酱2勺+葱丝。",
+          "params": {
+            "method": "片鸭配饼",
+            "ingredients": [
+              "荷饼10张",
+              "甜面酱2勺(30g)",
+              "葱丝适量"
+            ]
+          }
+        },
+        {
+          "id": "ky_f2",
+          "name": "直接斩块",
+          "desc": "家常做法",
+          "tip": "斩块更简单。每块约3cm，带皮带肉。蘸甜面酱吃。",
+          "params": {
+            "method": "斩块"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 20,
+    "heat_control": 20,
+    "seasoning": 20,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "duck": {
+        "type": "ky_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "ky_p1",
+      "seasoning": "ky_s1",
+      "roast": "ky_r1",
+      "finish": "ky_f1"
+    },
+    "optimal_time": 90,
+    "tips": {
+      "perfect": "完美的烤鸭！皮脆肉嫩，香气扑鼻。填鸭2.5kg烫皮风干4小时，麦芽糖水刷皮，200度烤60分钟。",
+      "good": "不错！鸭皮烤得很脆。风干时间够。",
+      "average": "还可以，风干时间要够。至少4小时。",
+      "poose": "多练几次，风干是关键。麦芽糖水刷皮+风干4小时。"
+    }
+  }
+}

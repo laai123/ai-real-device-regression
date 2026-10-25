@@ -1,0 +1,179 @@
+{
+  "dish": "泡菜汤",
+  "cuisine": "韩餐",
+  "category": "korean",
+  "difficulty": 1,
+  "cook_time": 15,
+  "servings": "2人份",
+  "calories": "约220大卡\/份",
+  "ingredients": {
+    "kimchi": {
+      "name": "泡菜",
+      "icon": "🥬",
+      "amount": "200g老泡菜（发酵3天以上）",
+      "options": {
+        "type": {
+          "label": "泡菜选择",
+          "options": [
+            {
+              "id": "pct_1",
+              "name": "老泡菜（发酵3天以上）",
+              "desc": "200g，酸味够，最适合做汤",
+              "score": 10,
+              "detail": "老泡菜酸味浓郁，做汤最好。发酵3天以上的泡菜酸度足够，汤底会很鲜。200g约1\/4颗白菜。"
+            },
+            {
+              "id": "pct_2",
+              "name": "新泡菜（发酵1天）",
+              "desc": "200g，味道较淡",
+              "score": 6,
+              "detail": "新泡菜酸味不够，做汤味道淡。建议多加一些或者加醋补充酸味。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "fry_kimchi": {
+      "name": "炒泡菜",
+      "description": "炒泡菜出香味，约3分钟",
+      "options": [
+        {
+          "id": "pct_f1",
+          "name": "五花肉50g煸出油后加泡菜200g炒3分钟",
+          "desc": "经典做法",
+          "tip": "五花肉50g切薄片煸出油（2分钟），加入泡菜200g切碎一起炒3分钟。五花肉的油炒泡菜更香。",
+          "params": {
+            "method": "五花肉炒泡菜",
+            "time": "5分钟",
+            "ingredients": [
+              "五花肉50g",
+              "泡菜200g"
+            ]
+          }
+        },
+        {
+          "id": "pct_f2",
+          "name": "直接炒泡菜200g(3分钟)",
+          "desc": "素菜版",
+          "tip": "锅里放1汤匙油（15ml），直接炒泡菜3分钟至出香味。不加肉也可以。",
+          "params": {
+            "method": "直接炒",
+            "time": "3分钟",
+            "ingredients": [
+              "泡菜200g"
+            ]
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "调味",
+      "description": "简单调味即可",
+      "options": [
+        {
+          "id": "pct_s1",
+          "name": "韩式辣酱1勺+蒜末5g+糖1\/4茶匙",
+          "desc": "经典调味",
+          "tip": "韩式辣酱1勺（15g）+蒜末5g+糖1\/4茶匙。糖可以中和泡菜的酸味。辣酱增加颜色和辣度。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "韩式辣酱1勺(15g)",
+              "蒜末5g",
+              "糖1\/4茶匙"
+            ]
+          }
+        },
+        {
+          "id": "pct_s2",
+          "name": "只用泡菜本身的酸味",
+          "desc": "原味",
+          "tip": "老泡菜本身已经够酸了，不需要再加调料。泡菜的酸味就是汤的灵魂。",
+          "params": {
+            "style": "原味"
+          }
+        }
+      ]
+    },
+    "stew": {
+      "name": "炖煮",
+      "description": "小火炖煮让味道融合，约10分钟",
+      "options": [
+        {
+          "id": "pct_sw1",
+          "name": "加水600ml+嫩豆腐1盒(300g)小火炖10分钟",
+          "desc": "经典做法",
+          "tip": "水600ml+嫩豆腐1盒（300g）切块。小火炖10分钟让味道融合。可以加金针菇50g增加口感。",
+          "params": {
+            "method": "炖煮",
+            "time": "10分钟",
+            "water": "600ml",
+            "ingredients": [
+              "嫩豆腐300g"
+            ]
+          }
+        },
+        {
+          "id": "pct_sw2",
+          "name": "加淘米水600ml炖",
+          "desc": "更浓郁",
+          "tip": "淘米水比清水更浓稠，可以让汤更浓郁。第一遍淘米水不要，用第二遍的。",
+          "params": {
+            "method": "淘米水炖",
+            "time": "10分钟",
+            "water": "淘米水600ml"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "出锅",
+      "description": "出锅配米饭",
+      "options": [
+        {
+          "id": "pct_f1",
+          "name": "配米饭1碗+煎蛋1个",
+          "desc": "经典搭配",
+          "tip": "泡菜汤配米饭是韩国人的最爱。加一个煎蛋更营养。煎蛋要单面煎，蛋黄流心拌汤更好吃。",
+          "params": {
+            "method": "配米饭煎蛋",
+            "ingredients": [
+              "米饭1碗",
+              "煎蛋1个"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 15,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 20,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "kimchi": {
+        "type": "pct_1"
+      }
+    },
+    "cooking_flow": {
+      "fry_kimchi": "pct_f1",
+      "seasoning": "pct_s1",
+      "stew": "pct_sw1",
+      "finish": "pct_f1"
+    },
+    "optimal_time": 15,
+    "tips": {
+      "perfect": "完美的泡菜汤！酸辣开胃，暖身暖心。老泡菜200g+五花肉50g炒香，水600ml+豆腐300g炖10分钟。",
+      "good": "不错！泡菜炒得很香。酸辣比例刚好。",
+      "average": "还可以，老泡菜更适合做汤。新泡菜酸味不够。",
+      "poose": "多练几次，泡菜的发酵程度是关键。发酵3天以上的最好。"
+    }
+  }
+}

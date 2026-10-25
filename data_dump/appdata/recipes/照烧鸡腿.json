@@ -1,0 +1,210 @@
+{
+  "dish": "照烧鸡腿",
+  "cuisine": "日料",
+  "category": "japanese",
+  "difficulty": 2,
+  "cook_time": 20,
+  "servings": "2人份",
+  "calories": "约420大卡\/份",
+  "ingredients": {
+    "chicken": {
+      "name": "鸡腿",
+      "icon": "🍗",
+      "amount": "4个鸡腿（约600g）",
+      "options": {
+        "prep": {
+          "label": "处理方式",
+          "options": [
+            {
+              "id": "zsjt_1",
+              "name": "去骨摊平，两面划刀",
+              "desc": "经典做法，受热均匀",
+              "score": 10,
+              "detail": "鸡腿去骨摊平，两面各划3刀（深1cm不要划穿皮）。去骨方法：从鸡腿内侧划一刀，沿骨头把肉剥下来。划刀让鸡腿更易入味。"
+            },
+            {
+              "id": "zsjt_2",
+              "name": "不去骨",
+              "desc": "带骨更有风味",
+              "score": 7,
+              "detail": "带骨鸡腿炖煮时间要加长5分钟。带骨的更有风味，但吃的时候要吐骨头。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "处理鸡腿",
+      "description": "去骨让鸡腿更易入味",
+      "options": [
+        {
+          "id": "zsjt_p1",
+          "name": "去骨摊平，两面各划3刀(深1cm)",
+          "desc": "经典处理",
+          "tip": "去骨后摊平，两面各划3刀，深度1cm不要划穿皮。划刀让鸡腿更易入味，受热更均匀。",
+          "params": {
+            "method": "去骨划刀",
+            "cuts": "两面各3刀，深1cm"
+          }
+        },
+        {
+          "id": "zsjt_p2",
+          "name": "不去骨直接煎",
+          "desc": "更简单",
+          "tip": "不去骨直接煎，但煎的时间要加长2分钟。带骨的更有风味。",
+          "params": {
+            "method": "不去骨"
+          }
+        }
+      ]
+    },
+    "cook": {
+      "name": "煎鸡腿",
+      "description": "皮朝下煎至金黄，约8分钟",
+      "options": [
+        {
+          "id": "zsjt_c1",
+          "name": "皮朝下中小火煎5分钟，翻面再煎3分钟",
+          "desc": "经典做法",
+          "tip": "皮朝下中小火（约150度）煎5分钟，让鸡皮逼出油脂变得焦脆。翻面再煎3分钟。煎的时候用锅铲压一下，让鸡腿均匀受热。",
+          "params": {
+            "method": "皮朝下煎",
+            "time": "8分钟",
+            "temp": "150度"
+          }
+        },
+        {
+          "id": "zsjt_c2",
+          "name": "两面煎至金黄(每面3分钟)",
+          "desc": "家常做法",
+          "tip": "两面各煎3分钟至金黄。先煎肉面再煎皮面。",
+          "params": {
+            "method": "两面煎",
+            "time": "6分钟",
+            "temp": "160度"
+          }
+        }
+      ]
+    },
+    "sauce": {
+      "name": "调照烧汁",
+      "description": "照烧汁是灵魂，精确计量",
+      "options": [
+        {
+          "id": "zsjt_s1",
+          "name": "酱油2勺+味醂2勺+糖1勺+料酒1勺",
+          "desc": "经典照烧汁",
+          "tip": "酱油2勺（30ml）+味醂2勺（30ml）+糖1勺（15g）+料酒1勺（15ml）。味醂是日式甜料酒，没有可以用糖+料酒代替。提前调好汁。",
+          "params": {
+            "style": "经典",
+            "ingredients": [
+              "酱油2勺(30ml)",
+              "味醂2勺(30ml)",
+              "糖1勺(15g)",
+              "料酒1勺(15ml)"
+            ]
+          }
+        },
+        {
+          "id": "zsjt_s2",
+          "name": "酱油2勺+蜂蜜1勺+蒜末5g",
+          "desc": "蜂蜜照烧",
+          "tip": "酱油2勺（30ml）+蜂蜜1勺（15g）+蒜末5g。蜂蜜让鸡腿更有光泽，甜度更高。",
+          "params": {
+            "style": "蜂蜜",
+            "ingredients": [
+              "酱油2勺(30ml)",
+              "蜂蜜1勺(15g)",
+              "蒜末5g"
+            ]
+          }
+        }
+      ]
+    },
+    "glaze": {
+      "name": "收汁",
+      "description": "倒入照烧汁大火收浓",
+      "options": [
+        {
+          "id": "zsjt_g1",
+          "name": "倒入照烧汁大火收浓(3分钟)",
+          "desc": "经典做法",
+          "tip": "倒入调好的照烧汁，大火收3分钟。收汁时要翻动鸡腿，让每面都裹上酱汁。汤汁收到能挂在鸡腿上即可。",
+          "params": {
+            "method": "收浓汤汁",
+            "time": "3分钟"
+          }
+        },
+        {
+          "id": "zsjt_g2",
+          "name": "小火慢煮入味(5分钟)",
+          "desc": "更入味",
+          "tip": "小火慢煮5分钟让鸡腿更入味。但时间更长，适合不赶时间的时候。",
+          "params": {
+            "method": "慢煮入味",
+            "time": "5分钟"
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "装盘",
+      "description": "切片装盘",
+      "options": [
+        {
+          "id": "zsjt_f1",
+          "name": "切片配米饭和蔬菜",
+          "desc": "经典吃法",
+          "tip": "照烧鸡腿切片（5mm厚），配米饭和烫青菜。照烧汁浇在鸡腿和米饭上。日式便当的经典搭配。",
+          "params": {
+            "method": "配米饭"
+          }
+        },
+        {
+          "id": "zsjt_f2",
+          "name": "撒白芝麻10g+葱花5g",
+          "desc": "更香更好看",
+          "tip": "出锅后撒白芝麻10g+葱花5g。芝麻要提前炒香。",
+          "params": {
+            "method": "撒芝麻葱花",
+            "ingredients": [
+              "白芝麻10g",
+              "葱花5g"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 10,
+    "heat_control": 25,
+    "seasoning": 25,
+    "step_order": 20,
+    "time_efficiency": 10,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "chicken": {
+        "prep": "zsjt_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "zsjt_p1",
+      "cook": "zsjt_c1",
+      "sauce": "zsjt_s1",
+      "glaze": "zsjt_g1",
+      "finish": "zsjt_f1"
+    },
+    "optimal_time": 20,
+    "tips": {
+      "perfect": "完美的照烧鸡腿！甜咸适中，鸡皮焦脆。鸡腿去骨划刀，皮朝下煎5分钟+翻面3分钟，照烧汁酱油2勺+味醂2勺+糖1勺。",
+      "good": "不错！照烧汁调得很好。鸡皮煎得很脆。",
+      "average": "还可以，皮朝下煎更香。照烧汁的比例是关键。",
+      "poose": "多练几次，照烧汁是灵魂。酱油2勺+味醂2勺+糖1勺是黄金比例。"
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "dish": "椰子鸡火锅",
+  "cuisine": "东南亚",
+  "category": "asian",
+  "difficulty": 1,
+  "cook_time": 30,
+  "servings": "3-4人份",
+  "calories": "约350大卡\/份",
+  "ingredients": {
+    "chicken": {
+      "name": "文昌鸡",
+      "icon": "🍗",
+      "amount": "1只文昌鸡（约1.5kg）",
+      "options": {
+        "cut": {
+          "label": "切法",
+          "options": [
+            {
+              "id": "yzj_1",
+              "name": "切块(3cm)",
+              "desc": "经典做法",
+              "score": 10,
+              "detail": "文昌鸡1.5kg切3cm块。文昌鸡皮薄肉嫩，是椰子鸡的最佳选择。切块后更好入味。"
+            },
+            {
+              "id": "yzj_2",
+              "name": "整只煮",
+              "desc": "量大实惠",
+              "score": 7,
+              "detail": "整只煮出来更好看，但需要加长煮的时间（多煮5分钟）。"
+            }
+          ]
+        }
+      }
+    },
+    "coconut": {
+      "name": "椰子",
+      "icon": "🥥",
+      "amount": "2个新鲜椰子（取椰子水约800ml+椰肉100g）",
+      "options": {
+        "type": {
+          "label": "椰子选择",
+          "options": [
+            {
+              "id": "yc_1",
+              "name": "新鲜椰子2个",
+              "desc": "取椰子水800ml+椰肉100g，最正宗",
+              "score": 10,
+              "detail": "新鲜椰子2个，取椰子水约800ml+椰肉100g。新鲜椰子水比瓶装的更鲜甜。椰肉刮出来切条。"
+            },
+            {
+              "id": "yc_2",
+              "name": "椰子水1L+椰肉100g",
+              "desc": "更方便",
+              "score": 8,
+              "detail": "超市有卖瓶装椰子水1L。加椰肉100g（超市有卖切好的）。方便但味道稍差。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cooking_flow": {
+    "prep": {
+      "name": "准备汤底",
+      "description": "椰子水+椰肉是灵魂",
+      "options": [
+        {
+          "id": "yzj_p1",
+          "name": "椰子水800ml+椰肉100g切条+红枣5颗+枸杞10g",
+          "desc": "经典汤底",
+          "tip": "椰子水800ml+椰肉100g切条+红枣5颗（去核）+枸杞10g。椰子水要选新鲜的，不要用椰汁（那是调味饮料）。",
+          "params": {
+            "method": "椰子水汤底",
+            "ingredients": [
+              "椰子水800ml",
+              "椰肉100g",
+              "红枣5颗",
+              "枸杞10g"
+            ]
+          }
+        }
+      ]
+    },
+    "cook": {
+      "name": "煮鸡肉",
+      "description": "汤底煮开后下鸡肉",
+      "options": [
+        {
+          "id": "yzj_c1",
+          "name": "汤底煮开后下鸡肉煮8分钟",
+          "desc": "经典做法",
+          "tip": "椰子水汤底大火烧开，放入鸡块。水再次烧开后转中火煮8分钟。文昌鸡嫩，不要煮太久。",
+          "params": {
+            "method": "煮鸡肉",
+            "time": "8分钟"
+          }
+        }
+      ]
+    },
+    "seasoning": {
+      "name": "蘸料",
+      "description": "酱油蘸料是灵魂",
+      "options": [
+        {
+          "id": "yzj_s1",
+          "name": "沙姜30g切末+酱油2勺+小米辣2个",
+          "desc": "经典蘸料",
+          "tip": "沙姜30g切末+酱油2勺（30ml）+小米辣2个切圈。沙姜比普通姜更香，是椰子鸡的标配。",
+          "params": {
+            "style": "沙姜酱油",
+            "ingredients": [
+              "沙姜30g",
+              "酱油2勺(30ml)",
+              "小米辣2个"
+            ]
+          }
+        }
+      ]
+    },
+    "finish": {
+      "name": "吃法",
+      "description": "先喝汤再吃肉",
+      "options": [
+        {
+          "id": "yzj_f1",
+          "name": "先喝一碗汤，再涮菜",
+          "desc": "经典吃法",
+          "tip": "第一碗汤最鲜，一定要先喝。然后吃鸡肉，蘸沙姜酱油。最后涮蔬菜（生菜、豆腐、金针菇等）。",
+          "params": {
+            "method": "先喝汤再涮菜"
+          }
+        }
+      ]
+    }
+  },
+  "scoring": {
+    "knife_skills": 5,
+    "heat_control": 15,
+    "seasoning": 30,
+    "step_order": 20,
+    "time_efficiency": 15,
+    "creativity": 10
+  },
+  "standard_answers": {
+    "ingredients": {
+      "chicken": {
+        "cut": "yzj_1"
+      },
+      "coconut": {
+        "type": "yc_1"
+      }
+    },
+    "cooking_flow": {
+      "prep": "yzj_p1",
+      "cook": "yzj_c1",
+      "seasoning": "yzj_s1",
+      "finish": "yzj_f1"
+    },
+    "optimal_time": 30,
+    "tips": {
+      "perfect": "完美的椰子鸡！汤鲜肉嫩，椰香浓郁。文昌鸡1.5kg切块，新鲜椰子2个取水800ml+肉100g，煮开后下鸡煮8分钟。",
+      "good": "不错！椰子水汤底很鲜。鸡肉嫩滑。",
+      "average": "还可以，椰子水要新鲜。不要用椰汁代替。",
+      "poose": "多练几次，椰子水是灵魂。第一碗汤最鲜，一定要先喝。"
+    }
+  }
+}

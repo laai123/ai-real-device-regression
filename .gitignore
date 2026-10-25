@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Allure 原始结果
+allure-results/
+
+# 二进制与系统文件
+*.apk
+.DS_Store
+Thumbs.db

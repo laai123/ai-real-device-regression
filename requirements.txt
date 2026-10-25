@@ -1,0 +1,15 @@
+# 厨房小能手 App 自动化测试 —— 依赖声明
+#
+# 设计目标：零第三方依赖，只用 Android SDK 自带的 adb 命令行。
+# 因此这里不需要安装任何包；保留本文件是为了固定"无外部依赖"这一约定。
+#
+# 运行环境要求：
+#   - Python 3.9+（仅用标准库：subprocess / xml.etree / json / re / base64）
+#   - Android SDK Platform-Tools（adb 需在 PATH 中，或用 ADB_BIN 环境变量指定）
+#   - 一台通过 adb devices 可见的 Android 设备
+#
+# 可选环境变量：
+#   ADB_BIN              adb 可执行文件路径，默认 "adb"
+#   MIMO_ADB_RECONNECT   无线调试掉线时的自动重连地址，默认 192.168.1.102:5555
+#
+# 说明：项目 README 约定的 pytest + allure 报告方案未采用，理由见测试报告「交付物」一节。
